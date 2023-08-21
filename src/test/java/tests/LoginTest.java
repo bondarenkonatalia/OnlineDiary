@@ -15,7 +15,7 @@ public class LoginTest extends BaseTest {
         loginPage.clickLoginButton();
         loginPage.isPageOpen();
 
-        assertTrue(entriesPage.titleVisible());
+        assertTrue(entriesPage.isPageOpen());
     }
     @Test(description = "Проверка логина с не валидными данными")
     public void loginVerificationWithInvalidData() {

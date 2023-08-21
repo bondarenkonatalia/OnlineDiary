@@ -1,7 +1,6 @@
 package pages;
 
 import io.qameta.allure.Step;
-import lombok.Data;
 import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -14,12 +13,14 @@ import java.util.List;
 
 public class EntriesPage extends BasePage {
     public static final By CREATE_AN_ENTRY_BUTTON = By.id("create-entry");
-    public static final By NEW_ENTRY = By.xpath("//*[contains(text(), '%s");
+    public static final By NEW_ENTRY = By.xpath("//div[@ng-bind-html='entry.body']");
     public static final By DELETE_ENTRIES_BUTTON = By.id("delete-entries");
     public static final By RECORD_INPUT_FIELD = By.xpath("//div[contains(@class,'contenteditable cke_editable')]");
     public static final By SAVE_BUTTON = By.xpath("//a[@title='Save']");
     public static final By HOME_BUTTON = By.id("back-to-overview");
-    public static final By CHECKBOX_ENTRY = By.xpath("//input[@class='ng-pristine ng-valid']");
+    public static final By CHECKBOX_ENTRY = By.xpath("//input[@ng-change='updateSelectionState()']");
+    public static final By ALL_CHECKBOX = By.xpath("//input[@ng-change='selectOrUnselectAll()']");
+    public static final By ENTRY_CONTAINER= By.xpath("//input[@ng-change='selectOrUnselectAll()']");
     String RecordingDirectory = "//div[@class='div ng-scope']";
 
     public EntriesPage(WebDriver driver) {
@@ -28,41 +29,63 @@ public class EntriesPage extends BasePage {
 
     @Step("Открыть страницу")
     public EntriesPage open() {
-        driver.get(URL);
+        driver.get(URL + "app/#/entries");
         log.info("Open page with URL:" + URL);
         return this;
     }
-
-    public boolean titleVisible() {
-        driver.findElement(CREATE_AN_ENTRY_BUTTON).isDisplayed();
-        log.info("Checks that the title is visible");
-        return true;
-    }
-    @Step("Создание новой записи с введенным текстом")
-    public void createNewEntryWithText() {
+    @Step("Создание новой записи с текстом")
+    public EntriesPage createNewEntryWithText(String text) {
         driver.findElement(CREATE_AN_ENTRY_BUTTON).click();
         log.info("Push button CREATE_AN_ENTRY_BUTTON");
-        driver.findElement(RECORD_INPUT_FIELD).sendKeys();
+        driver.findElement(RECORD_INPUT_FIELD).sendKeys(text);
         log.info("Entry field opened");
         driver.findElement(SAVE_BUTTON).click();
         log.info("Press save button");
-        driver.findElement(HOME_BUTTON).click();
-        log.info("Press home button");
-
+        return this;
     }
-    @Step("Проверка создания записи ")
-    public String textEntryShouldBe() {
+    @Step("Нажать кнопку HOME_BUTTON")
+    public EntriesPage clickHomeButton() {
+        driver.findElement(HOME_BUTTON).click();
+        log.info("Press home button with xPath: "+ HOME_BUTTON);
+        return this;
+    }
+    @Step("Проверка создания записи")
+    public String gettextEntry(String text) {
         return driver.findElement(NEW_ENTRY).getText();
     }
 
-    @Step("Удаление записи")
-    public EntriesPage deleteEntry() {
+    @Step("Выбрать запись из списка")
+    public EntriesPage selectEntry() {
         List<WebElement> list = driver.findElements(CHECKBOX_ENTRY);
-        list.get(0).getText();
+        list.get(0).click();
+        return this;
+    }
+    @Step("Выбрать все записи")
+    public void selectAllEntries() {
+        driver.findElement(ALL_CHECKBOX).click();
+        log.info("Click on all checkbox with xPath: "+ ALL_CHECKBOX);
+    }
+    @Step("Выбрать запись по индексу")
+    public EntriesPage getEntryByIndex(int index) {
+        driver.findElements(ENTRY_CONTAINER).get(index);
+        return this;
+    }
+    @Step("Редактирование созданной записи")
+    public void editingPost(String text) {
+        driver.findElement(NEW_ENTRY).click();
+        driver.findElement(RECORD_INPUT_FIELD).clear();
+        driver.findElement(RECORD_INPUT_FIELD).sendKeys(text);
+        log.info("Entry field opened");
+        driver.findElement(SAVE_BUTTON).click();
+        log.info("Press save button");
+    }
+    @Step("Нажать кнопку DELETE_ENTRIES_BUTTON")
+    public EntriesPage clickDeleteEntriesButton() {
         driver.findElement(DELETE_ENTRIES_BUTTON).click();
+        log.info("Press delete entries button with xPath: "+ DELETE_ENTRIES_BUTTON);
         Alert alert = driver.switchTo().alert();
         alert.accept();
-        return new EntriesPage(driver);
+        return this;
     }
 
     @Override

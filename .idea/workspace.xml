@@ -4,23 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="159a4e6e-9455-4f41-ae2a-50b1a97d3c71" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="159a4e6e-9455-4f41-ae2a-50b1a97d3c71" name="Changes" comment="с изменениями">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/TagsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineDiary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineDiary.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/EntriesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/EntriesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/EntriesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/EntriesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/TestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/AllureUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/AllureUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/regression.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +30,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2Tvu9uyYD9BgRVD1Nhiha6aJidD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -54,8 +47,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.LoginTest">
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.EntriesTest.editEntry">
+    <configuration name="EntriesTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OnlineDiary" />
       <extension name="coverage">
         <pattern>
@@ -64,7 +57,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.EntriesTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -72,7 +65,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.loginVerificationWithInvalidData" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EntriesTest.creatingNewEntry" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OnlineDiary" />
       <extension name="coverage">
         <pattern>
@@ -81,8 +74,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="loginVerificationWithInvalidData" />
+      <option name="MAIN_CLASS_NAME" value="tests.EntriesTest" />
+      <option name="METHOD_NAME" value="creatingNewEntry" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -90,7 +83,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.validatingLoginWithEmptyField" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EntriesTest.deleteEntry" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OnlineDiary" />
       <extension name="coverage">
         <pattern>
@@ -99,8 +92,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="validatingLoginWithEmptyField" />
+      <option name="MAIN_CLASS_NAME" value="tests.EntriesTest" />
+      <option name="METHOD_NAME" value="deleteEntry" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -108,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.validatingLoginWithEmptyPasswordField" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EntriesTest.deletingAllEntries" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OnlineDiary" />
       <extension name="coverage">
         <pattern>
@@ -117,8 +110,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="validatingLoginWithEmptyPasswordField" />
+      <option name="MAIN_CLASS_NAME" value="tests.EntriesTest" />
+      <option name="METHOD_NAME" value="deletingAllEntries" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -126,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.validatingLoginWithEmptyUserField" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EntriesTest.editEntry" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OnlineDiary" />
       <extension name="coverage">
         <pattern>
@@ -135,8 +128,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="validatingLoginWithEmptyUserField" />
+      <option name="MAIN_CLASS_NAME" value="tests.EntriesTest" />
+      <option name="METHOD_NAME" value="editEntry" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -146,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.LoginTest.validatingLoginWithEmptyField" />
-        <item itemvalue="TestNG.LoginTest.validatingLoginWithEmptyPasswordField" />
-        <item itemvalue="TestNG.LoginTest.validatingLoginWithEmptyUserField" />
-        <item itemvalue="TestNG.LoginTest.loginVerificationWithInvalidData" />
+        <item itemvalue="TestNG.EntriesTest.editEntry" />
+        <item itemvalue="TestNG.EntriesTest.creatingNewEntry" />
+        <item itemvalue="TestNG.EntriesTest.deletingAllEntries" />
+        <item itemvalue="TestNG.EntriesTest.deleteEntry" />
+        <item itemvalue="TestNG.EntriesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -163,6 +156,18 @@
       <option name="presentableId" value="Default" />
       <updated>1691935727850</updated>
     </task>
+    <task id="LOCAL-00001" summary="с изменениями">
+      <created>1692362869805</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692362869805</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="с изменениями" />
+    <option name="LAST_COMMIT_MESSAGE" value="с изменениями" />
   </component>
 </project>
