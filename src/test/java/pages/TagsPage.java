@@ -8,50 +8,40 @@ import org.openqa.selenium.WebDriver;
 @Log4j2
 public class TagsPage extends BasePage {
 
-    public static final By TITLE_MANAGER_TAGS = By.xpath("//h1[.='Manage Tags']");
-    public static final By EDIT_TAGS = By.xpath("//div[@id='main']//table[@class='spaced-table']//i[@class='icon-plus icon-white']");
-    public static final By TITLE_EDIT_TAGS = By.xpath("//h1[.='Edit Tag']");
-    public static final By INPUT_TAG_NAME = By.xpath("//input[@id='tag']");
-    public static final By BUTTON_OK = By.xpath("//button[@class='btn btn-primary']");
+    public static final By MANAGER_TAGS_BUTTON = By.xpath("//a[@class='tags__manage-link']");
+    public static final By TITLE_MANAGER_TAGS = By.xpath("//div[@class='content-container clearfix ng-scope']//h1");
+    public static final By EDIT_TAGS = By.xpath("//a[@ng-href='#/tags/289432/edit']");
+    public static final By INPUT_TAG_NAME = By.xpath("//input[@class='form-control ng-pristine ng-valid']");
+    public static final By BUTTON_OK = By.xpath("//button[@class='btn btn-default']");
 
     public TagsPage(WebDriver driver) {
         super(driver);
     }
-    @Step("Открыть страницу")
 
-    public LoginPage open() {
-        driver.get(URL+"app/#/tags");
-        log.info("Open page with URL: " + URL);
-        return this.open();
+    @Step("Нажать кнопку MANAGER_TAGS_BUTTON")
+    public void clickButtonManagerTags() {
+        driver.findElement(MANAGER_TAGS_BUTTON).click();
     }
 
-    @Step("Теги менеджера заголовков должны быть видны")
-    public boolean titleTagsShouldBeVisible() {
-        return driver.findElement(TITLE_MANAGER_TAGS).isDisplayed();
-    }
-
-    @Step("Нажмать на кнопку для редактирования тегов")
+    @Step("Нажать на кнопку для редактирования тегов")
     public void buttonEditTags() {
         driver.findElement(EDIT_TAGS).click();
     }
-
-    @Step("Теги редактирования заголовка должны быть видны")
-    public boolean titleEditTagsShouldBeVisible() {
-        return driver.findElement(TITLE_EDIT_TAGS).isDisplayed();
+    @Step("Создать имя тега")
+    public void createTagName(String text) {
+        driver.findElement(INPUT_TAG_NAME).sendKeys(text);
     }
-
     @Step("Очистить имя тега")
     public void clearTagName() {
         driver.findElement(INPUT_TAG_NAME).clear();
     }
-
-    @Step("Нажать на кнопку отправки страницы настроек")
+    @Step("Нажать кнопку OK")
     public void clickOnOkButton() {
         driver.findElement(BUTTON_OK).click();
     }
 
     @Override
     public boolean isPageOpen() {
-        return false;
+        return isExist(TITLE_MANAGER_TAGS);
     }
 }

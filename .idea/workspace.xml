@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="159a4e6e-9455-4f41-ae2a-50b1a97d3c71" name="Changes" comment="с изменениями">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/TagsPage.java" afterDir="false" />
+    <list default="true" id="159a4e6e-9455-4f41-ae2a-50b1a97d3c71" name="Changes" comment=" EntriesTest">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TegTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/EntriesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/EntriesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/EntriesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/EntriesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TagsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TagsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,24 +45,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.EntriesTest.editEntry">
-    <configuration name="EntriesTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OnlineDiary" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.EntriesTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.TegTest.editTag">
     <configuration name="EntriesTest.creatingNewEntry" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OnlineDiary" />
       <extension name="coverage">
@@ -76,42 +57,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.EntriesTest" />
       <option name="METHOD_NAME" value="creatingNewEntry" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EntriesTest.deleteEntry" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OnlineDiary" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.EntriesTest" />
-      <option name="METHOD_NAME" value="deleteEntry" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EntriesTest.deletingAllEntries" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OnlineDiary" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.EntriesTest" />
-      <option name="METHOD_NAME" value="deletingAllEntries" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -137,13 +82,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TegTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OnlineDiary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TegTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TegTest.creatingNewTeg" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OnlineDiary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TegTest" />
+      <option name="METHOD_NAME" value="creatingNewTeg" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TegTest.editTag" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OnlineDiary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TegTest" />
+      <option name="METHOD_NAME" value="editTag" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TegTest.editTag" />
+        <item itemvalue="TestNG.TegTest" />
+        <item itemvalue="TestNG.TegTest.creatingNewTeg" />
         <item itemvalue="TestNG.EntriesTest.editEntry" />
         <item itemvalue="TestNG.EntriesTest.creatingNewEntry" />
-        <item itemvalue="TestNG.EntriesTest.deletingAllEntries" />
-        <item itemvalue="TestNG.EntriesTest.deleteEntry" />
-        <item itemvalue="TestNG.EntriesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -163,11 +161,19 @@
       <option name="project" value="LOCAL" />
       <updated>1692362869805</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=" EntriesTest">
+      <created>1692636795555</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692636795555</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="с изменениями" />
-    <option name="LAST_COMMIT_MESSAGE" value="с изменениями" />
+    <MESSAGE value=" EntriesTest" />
+    <option name="LAST_COMMIT_MESSAGE" value=" EntriesTest" />
   </component>
 </project>

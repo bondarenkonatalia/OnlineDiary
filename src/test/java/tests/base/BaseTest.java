@@ -11,6 +11,7 @@ import org.testng.annotations.Listeners;
 import pages.EntriesPage;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.TagsPage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -21,6 +22,7 @@ public abstract class BaseTest {
     protected HomePage homePage;
     protected LoginPage loginPage;
     protected EntriesPage entriesPage;
+    protected TagsPage tagsPage;
 
     @Step("Настройка и открытие браузера")
     @BeforeMethod
@@ -34,6 +36,7 @@ public abstract class BaseTest {
         homePage = new HomePage(driver);
         loginPage = new LoginPage(driver);
         entriesPage = new EntriesPage(driver);
+        tagsPage = new TagsPage(driver);
     }
 
     @Step("Закрытие браузера")
