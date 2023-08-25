@@ -18,22 +18,18 @@ public class TagsPage extends BasePage {
         super(driver);
     }
 
-    @Step("Нажать кнопку MANAGER_TAGS_BUTTON")
-    public void clickButtonManagerTags() {
-        driver.findElement(MANAGER_TAGS_BUTTON).click();
-    }
-
     @Step("Нажать на кнопку для редактирования тегов")
     public void buttonEditTags() {
         driver.findElement(EDIT_TAGS).click();
     }
-    @Step("Создать имя тега")
-    public void createTagName(String text) {
-        driver.findElement(INPUT_TAG_NAME).sendKeys(text);
-    }
+
     @Step("Очистить имя тега")
     public void clearTagName() {
         driver.findElement(INPUT_TAG_NAME).clear();
+    }
+    @Step("Создать имя тега")
+    public void createTagName(String text) {
+        driver.findElement(INPUT_TAG_NAME).sendKeys(text);
     }
     @Step("Нажать кнопку OK")
     public void clickOnOkButton() {

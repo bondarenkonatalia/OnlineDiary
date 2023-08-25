@@ -21,7 +21,8 @@ public class EntriesPage extends BasePage {
     public static final By CHECKBOX_ENTRY = By.xpath("//input[@ng-change='updateSelectionState()']");
     public static final By ALL_CHECKBOX = By.xpath("//input[@ng-change='selectOrUnselectAll()']");
     public static final By ENTRY_CONTAINER= By.xpath("//input[@ng-change='selectOrUnselectAll()']");
-    String RecordingDirectory = "//div[@class='div ng-scope']";
+    public static final By MANAGER_TAGS_BUTTON = By.xpath("//a[@class='tags__manage-link']");
+    public static final By NO_ENTRIES_FOUND = By.xpath("//div[@class='body-no-content body']");
 
     public EntriesPage(WebDriver driver) {
         super(driver);
@@ -49,11 +50,10 @@ public class EntriesPage extends BasePage {
         log.info("Press home button with xPath: "+ HOME_BUTTON);
         return this;
     }
-    @Step("Проверка создания записи")
-    public String gettextEntry(String text) {
-        return driver.findElement(NEW_ENTRY).getText();
+    @Step("Проверить, запись отсутствует")
+    public String gettextEntry() {
+        return driver.findElement(NO_ENTRIES_FOUND).getText();
     }
-
     @Step("Выбрать запись из списка")
     public EntriesPage selectEntry() {
         List<WebElement> list = driver.findElements(CHECKBOX_ENTRY);
@@ -86,6 +86,10 @@ public class EntriesPage extends BasePage {
         Alert alert = driver.switchTo().alert();
         alert.accept();
         return this;
+    }
+    @Step("Нажать кнопку MANAGER_TAGS_BUTTON")
+    public void clickButtonManagerTags() {
+        driver.findElement(MANAGER_TAGS_BUTTON).click();
     }
 
     @Override

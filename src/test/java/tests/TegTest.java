@@ -9,10 +9,11 @@ public class TegTest extends BaseTest {
         loginPage.open();
         loginPage.login("aadxeep@mailto.plus", "Nata1111");
         loginPage.clickLoginButton();
-        tagsPage.clickButtonManagerTags();
+        entriesPage.clickButtonManagerTags();
         tagsPage.buttonEditTags();
         tagsPage.clearTagName();
         tagsPage.createTagName("Тест 1");
         tagsPage.clickOnOkButton();
+
     }
 }

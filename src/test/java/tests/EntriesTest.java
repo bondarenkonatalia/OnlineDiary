@@ -38,8 +38,11 @@ public class EntriesTest extends BaseTest {
         entriesPage.open();
         entriesPage.selectEntry();
         entriesPage.clickDeleteEntriesButton();
+        entriesPage.gettextEntry();
+
+
     }
-    @Test(description = "Проверка удаления записи")
+    @Test(description = "Проверка удаления записей")
     public void deletingAllEntries() {
         loginPage.open();
         loginPage.login("aadxeep@mailto.plus", "Nata1111");

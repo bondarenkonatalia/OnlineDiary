@@ -13,11 +13,11 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <selenium.version>3.141.59</selenium.version>
-        <testng.version>7.7.1</testng.version>
-        <bonigarcia.version>5.3.3</bonigarcia.version>
+        <testng.version>7.8.0</testng.version>
+        <bonigarcia.version>5.5.0</bonigarcia.version>
         <aspectj.version>1.9.6</aspectj.version>
         <allure-testng.version>2.13.9</allure-testng.version>
-        <projectlombok.version>1.18.24</projectlombok.version>
+        <projectlombok.version>1.18.26</projectlombok.version>
         <logging.log4j.version>2.14.1</logging.log4j.version>
         <dataformat.version>2.12.3</dataformat.version>
         <plugins.version>3.0.0-M4</plugins.version>
@@ -40,12 +40,12 @@
             <version>${bonigarcia.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>${testng.version}</version>
-            <scope>test</scope>
-        </dependency>
+            <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>${testng.version}</version>
+                <scope>compile</scope>
+            </dependency>
 
         <dependency>
             <groupId>org.aspectj</groupId>
