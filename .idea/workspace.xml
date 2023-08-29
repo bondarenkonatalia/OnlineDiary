@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="159a4e6e-9455-4f41-ae2a-50b1a97d3c71" name="Changes" comment=" TegTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/elements/DropDown.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/EntriesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/EntriesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TagsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TagsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/EntriesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/EntriesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TegTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TegTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="159a4e6e-9455-4f41-ae2a-50b1a97d3c71" name="Changes" comment="с изменениями" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,14 +177,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692983020754</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="с изменениями">
+      <created>1693318745755</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693318745755</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="с изменениями" />
     <MESSAGE value=" EntriesTest" />
     <MESSAGE value=" TegPage" />
     <MESSAGE value=" TegTest" />
-    <option name="LAST_COMMIT_MESSAGE" value=" TegTest" />
+    <MESSAGE value="с изменениями" />
+    <option name="LAST_COMMIT_MESSAGE" value="с изменениями" />
   </component>
 </project>
