@@ -6,14 +6,34 @@ import tests.base.BaseTest;
 public class TegTest extends BaseTest {
     @Test(description = "Проверка редактирования  тега")
     public void editTag() {
-        loginPage.open();
-        loginPage.login("aadxeep@mailto.plus", "Nata1111");
-        loginPage.clickLoginButton();
-        entriesPage.clickButtonManagerTags();
-        tagsPage.buttonEditTags();
-        tagsPage.clearTagName();
-        tagsPage.createTagName("Тест 1");
-        tagsPage.clickOnOkButton();
+        loginPage.open()
+                .login("aadxeep@mailto.plus", "Nata1111")
+                .clickLoginButton();
+        tagsPage.clickButtonManagerTags()
+                .buttonEditTags()
+                .createTagName("TEG 3")
+                .clickOnOkButton();
+    }
+
+    @Test(description = "Проверка создания тега")
+    public void createTeg() {
+        loginPage.open()
+                .login("aadxeep@mailto.plus", "Nata1111")
+                .clickLoginButton();
+        entriesPage.open();
+        tagsPage.clickEntries()
+                .writeTextToTag("TEG 1")
+                .clickOk();
+    }
+    @Test(description = "Проверка удаления тега")
+    public void deleteTag() {
+        loginPage.open()
+                .login("aadxeep@mailto.plus", "Nata1111")
+                .clickLoginButton();
+        tagsPage.clickButtonManagerTags()
+                .buttonDeleteTags()
+                .gettextTeg();
 
     }
+
 }

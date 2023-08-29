@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
+import static pages.TagsPage.INPUT_TAG_NAME;
+
 @Log4j2
 
 public class EntriesPage extends BasePage {
@@ -21,7 +23,6 @@ public class EntriesPage extends BasePage {
     public static final By CHECKBOX_ENTRY = By.xpath("//input[@ng-change='updateSelectionState()']");
     public static final By ALL_CHECKBOX = By.xpath("//input[@ng-change='selectOrUnselectAll()']");
     public static final By ENTRY_CONTAINER= By.xpath("//input[@ng-change='selectOrUnselectAll()']");
-    public static final By MANAGER_TAGS_BUTTON = By.xpath("//a[@class='tags__manage-link']");
     public static final By NO_ENTRIES_FOUND = By.xpath("//div[@class='body-no-content body']");
 
     public EntriesPage(WebDriver driver) {
@@ -61,9 +62,10 @@ public class EntriesPage extends BasePage {
         return this;
     }
     @Step("Выбрать все записи")
-    public void selectAllEntries() {
+    public EntriesPage selectAllEntries() {
         driver.findElement(ALL_CHECKBOX).click();
         log.info("Click on all checkbox with xPath: "+ ALL_CHECKBOX);
+        return this;
     }
     @Step("Выбрать запись по индексу")
     public EntriesPage getEntryByIndex(int index) {
@@ -71,13 +73,14 @@ public class EntriesPage extends BasePage {
         return this;
     }
     @Step("Редактирование созданной записи")
-    public void editingPost(String text) {
+    public EntriesPage editingPost(String text) {
         driver.findElement(NEW_ENTRY).click();
         driver.findElement(RECORD_INPUT_FIELD).clear();
         driver.findElement(RECORD_INPUT_FIELD).sendKeys(text);
         log.info("Entry field opened");
         driver.findElement(SAVE_BUTTON).click();
         log.info("Press save button");
+        return this;
     }
     @Step("Нажать кнопку DELETE_ENTRIES_BUTTON")
     public EntriesPage clickDeleteEntriesButton() {
@@ -87,11 +90,6 @@ public class EntriesPage extends BasePage {
         alert.accept();
         return this;
     }
-    @Step("Нажать кнопку MANAGER_TAGS_BUTTON")
-    public void clickButtonManagerTags() {
-        driver.findElement(MANAGER_TAGS_BUTTON).click();
-    }
-
     @Override
     public boolean isPageOpen() {
         return isExist(CREATE_AN_ENTRY_BUTTON);

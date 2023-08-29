@@ -6,50 +6,52 @@ import org.testng.annotations.Test;
 import pages.EntriesPage;
 import tests.base.BaseTest;
 
+import static java.awt.SystemColor.text;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class EntriesTest extends BaseTest {
     @Test(description = "Проверка создания новой записи")
     public void creatingNewEntry() {
-        loginPage.open();
-        loginPage.login("aadxeep@mailto.plus", "Nata1111");
-        loginPage.clickLoginButton();
-        entriesPage.open();
-        entriesPage.createNewEntryWithText("Смысл жизни есть всегда. Его нужно только найти");
-        entriesPage.clickHomeButton();
-
+        loginPage.open()
+                .login("aadxeep@mailto.plus", "Nata1111")
+                .clickLoginButton();
+        entriesPage.open()
+                .createNewEntryWithText("Победившему себя ничего не страшно")
+                .clickHomeButton();
     }
+
     @Test(description = "Проверка редактирования записи")
     public void editEntry() {
-        loginPage.open();
-        loginPage.login("aadxeep@mailto.plus", "Nata1111");
-        loginPage.clickLoginButton();
-        entriesPage.open();
-        entriesPage.editingPost("Текст изменён");
-        entriesPage.clickHomeButton();
+        loginPage.open()
+                .login("aadxeep@mailto.plus", "Nata1111")
+                .clickLoginButton();
+        entriesPage.open()
+                .editingPost("Новый текст")
+                .clickHomeButton();
 
     }
+
     @Test(description = "Проверка удаления записи")
     public void deleteEntry() {
-        loginPage.open();
-        loginPage.login("aadxeep@mailto.plus", "Nata1111");
-        loginPage.clickLoginButton();
-        entriesPage.open();
-        entriesPage.selectEntry();
-        entriesPage.clickDeleteEntriesButton();
-        entriesPage.gettextEntry();
-
+        loginPage.open()
+                .login("aadxeep@mailto.plus", "Nata1111")
+                .clickLoginButton();
+        entriesPage.open()
+                .selectEntry()
+                .clickDeleteEntriesButton()
+                .gettextEntry();
 
     }
-    @Test(description = "Проверка удаления записей")
+
+    @Test(description = "Проверка удаления всех записей")
     public void deletingAllEntries() {
-        loginPage.open();
-        loginPage.login("aadxeep@mailto.plus", "Nata1111");
-        loginPage.clickLoginButton();
-        entriesPage.open();
-        entriesPage.selectAllEntries();
-        entriesPage.clickDeleteEntriesButton();
+        loginPage.open()
+                .login("aadxeep@mailto.plus", "Nata1111")
+                .clickLoginButton();
+        entriesPage.open()
+                .selectAllEntries()
+                .clickDeleteEntriesButton();
     }
 }
 
