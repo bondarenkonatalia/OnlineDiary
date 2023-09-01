@@ -15,7 +15,7 @@ public class TagsPage extends BasePage {
     public static final By EDIT_TAGS = By.xpath("//i[@class='icon-plus icon-white']");
     public static final By INPUT_TAG_NAME = By.xpath("//input[@ng-change='resetFormStatus()']");
     public static final By BUTTON_OK = By.xpath("//button[@class='btn btn-default']");
-    public static final By ENTRIES = By.xpath("(//div[@class=' body'])[3]");
+    public static final By ENTRIES = By.xpath("(//div[@class=' body'])[1]");
     public static final By NEW_TAG_INPUT = By.xpath("//input[@ng-model='model.newTag']");
     public static final By CREATE_NEW_TAG_BUTTON = By.id("assign-new-tag");
     public static final By DELETE_TAG_BUTTON = By.xpath("//a[@ng-click='deleteTag(tag)']");
@@ -79,9 +79,9 @@ public class TagsPage extends BasePage {
         alert.accept();
         return this;
     }
-    @Step("Проверить, запись отсутствует")
+    @Step("Взять текст тега")
     public String gettextTeg() {
-        return driver.findElement(ENTRY_TAG_NO).getText();
+        return driver.findElement(NEW_TAG_INPUT).getText();
     }
 
 

@@ -9,8 +9,6 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-import static pages.TagsPage.INPUT_TAG_NAME;
-
 @Log4j2
 
 public class EntriesPage extends BasePage {
@@ -35,25 +33,31 @@ public class EntriesPage extends BasePage {
         log.info("Open page with URL:" + URL);
         return this;
     }
-    @Step("Создание новой записи с текстом")
-    public EntriesPage createNewEntryWithText(String text) {
+    @Step("Нажать кнопку CREATE_AN_ENTRY_BUTTON")
+    public EntriesPage clickCreateAnEntryButton() {
         driver.findElement(CREATE_AN_ENTRY_BUTTON).click();
         log.info("Push button CREATE_AN_ENTRY_BUTTON");
+        return this;
+    }
+
+    @Step("Создание новой записи с текстом")
+    public EntriesPage createNewEntryWithText(String text) {
         driver.findElement(RECORD_INPUT_FIELD).sendKeys(text);
         log.info("Entry field opened");
         driver.findElement(SAVE_BUTTON).click();
         log.info("Press save button");
         return this;
     }
+    @Step("Взять текст созданной записи")
+    public String gettextEntry() {
+        return driver.findElement(NEW_ENTRY).getText();
+    }
+
     @Step("Нажать кнопку HOME_BUTTON")
     public EntriesPage clickHomeButton() {
         driver.findElement(HOME_BUTTON).click();
         log.info("Press home button with xPath: "+ HOME_BUTTON);
         return this;
-    }
-    @Step("Проверить, запись отсутствует")
-    public String gettextEntry() {
-        return driver.findElement(NO_ENTRIES_FOUND).getText();
     }
     @Step("Выбрать запись из списка")
     public EntriesPage selectEntry() {
@@ -65,11 +69,6 @@ public class EntriesPage extends BasePage {
     public EntriesPage selectAllEntries() {
         driver.findElement(ALL_CHECKBOX).click();
         log.info("Click on all checkbox with xPath: "+ ALL_CHECKBOX);
-        return this;
-    }
-    @Step("Выбрать запись по индексу")
-    public EntriesPage getEntryByIndex(int index) {
-        driver.findElements(ENTRY_CONTAINER).get(index);
         return this;
     }
     @Step("Редактирование созданной записи")

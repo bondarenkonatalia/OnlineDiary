@@ -1,14 +1,14 @@
 package tests;
 
-import lombok.extern.log4j.Log4j2;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.EntriesPage;
 import tests.base.BaseTest;
 
-import static java.awt.SystemColor.text;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
+
 
 public class EntriesTest extends BaseTest {
     @Test(description = "Проверка создания новой записи")
@@ -17,8 +17,12 @@ public class EntriesTest extends BaseTest {
                 .login("aadxeep@mailto.plus", "Nata1111")
                 .clickLoginButton();
         entriesPage.open()
-                .createNewEntryWithText("Победившему себя ничего не страшно")
+                .clickCreateAnEntryButton()
+                .createNewEntryWithText("Нельзя упускать возможность чему-то научиться")
                 .clickHomeButton();
+
+        assertEquals(entriesPage.gettextEntry(),"Нельзя упускать возможность чему-то научиться","Запись не создана");
+
     }
 
     @Test(description = "Проверка редактирования записи")
@@ -29,6 +33,8 @@ public class EntriesTest extends BaseTest {
         entriesPage.open()
                 .editingPost("Новый текст")
                 .clickHomeButton();
+
+        assertEquals(entriesPage.gettextEntry(),"Новый текст","Запись не изменилась");
 
     }
 
@@ -41,6 +47,8 @@ public class EntriesTest extends BaseTest {
                 .selectEntry()
                 .clickDeleteEntriesButton()
                 .gettextEntry();
+
+        assertEquals(entriesPage.gettextEntry(),"Новый текст","Запись не удалена");
 
     }
 
