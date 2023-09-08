@@ -7,7 +7,7 @@ import static org.testng.Assert.assertTrue;
 
 public class HomeTest extends BaseTest {
 
-    @Test(description = "Переход на страницу аввторизации")
+    @Test(description = "Переход на страницу авторизации")
     public void goToLoginPage(){
         homePage.open()
                 .clickLoginPrimary()

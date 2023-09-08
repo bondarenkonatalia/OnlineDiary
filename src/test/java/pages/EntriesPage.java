@@ -20,8 +20,7 @@ public class EntriesPage extends BasePage {
     public static final By HOME_BUTTON = By.id("back-to-overview");
     public static final By CHECKBOX_ENTRY = By.xpath("//input[@ng-change='updateSelectionState()']");
     public static final By ALL_CHECKBOX = By.xpath("//input[@ng-change='selectOrUnselectAll()']");
-    public static final By ENTRY_CONTAINER= By.xpath("//input[@ng-change='selectOrUnselectAll()']");
-    public static final By NO_ENTRIES_FOUND = By.xpath("//div[@class='body-no-content body']");
+    public static final By NO_RECORDS= By.xpath("//div[@class='none centered']");
 
     public EntriesPage(WebDriver driver) {
         super(driver);
@@ -49,7 +48,7 @@ public class EntriesPage extends BasePage {
         return this;
     }
     @Step("Взять текст созданной записи")
-    public String gettextEntry() {
+    public String getTextEntry() {
         return driver.findElement(NEW_ENTRY).getText();
     }
 
@@ -88,6 +87,16 @@ public class EntriesPage extends BasePage {
         Alert alert = driver.switchTo().alert();
         alert.accept();
         return this;
+    }
+    @Step("Нахождение абзаца «Записи не найдены")
+    public boolean isThereNoEntries() {
+        driver.findElement(NO_RECORDS);
+        log.info("Finding the 'No entries found paragraph'");
+        return true;
+    }
+    @Step("Убедиться, что на странице нет записей")
+    public String noEntriesOnPage() {
+        return driver.findElement(NO_RECORDS).getText();
     }
     @Override
     public boolean isPageOpen() {

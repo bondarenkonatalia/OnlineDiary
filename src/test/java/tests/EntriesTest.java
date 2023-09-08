@@ -1,9 +1,6 @@
 package tests;
 
-
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.EntriesPage;
 import tests.base.BaseTest;
 
 import static org.testng.Assert.assertEquals;
@@ -15,13 +12,13 @@ public class EntriesTest extends BaseTest {
     public void creatingNewEntry() {
         loginPage.open()
                 .login("aadxeep@mailto.plus", "Nata1111")
-                .clickLoginButton();
-        entriesPage.open()
+                .clickLoginButton()
+                .open()
                 .clickCreateAnEntryButton()
-                .createNewEntryWithText("Нельзя упускать возможность чему-то научиться")
+                .createNewEntryWithText("Даже если вас съели – у вас два выхода")
                 .clickHomeButton();
 
-        assertEquals(entriesPage.gettextEntry(),"Нельзя упускать возможность чему-то научиться","Запись не создана");
+        assertEquals(entriesPage.getTextEntry(), "Даже если вас съели – у вас два выхода", "Запись не создана");
 
     }
 
@@ -29,12 +26,12 @@ public class EntriesTest extends BaseTest {
     public void editEntry() {
         loginPage.open()
                 .login("aadxeep@mailto.plus", "Nata1111")
-                .clickLoginButton();
-        entriesPage.open()
+                .clickLoginButton()
+                .open()
                 .editingPost("Новый текст")
                 .clickHomeButton();
 
-        assertEquals(entriesPage.gettextEntry(),"Новый текст","Запись не изменилась");
+        assertEquals(entriesPage.getTextEntry(), "Новый текст", "Запись не изменилась");
 
     }
 
@@ -42,13 +39,13 @@ public class EntriesTest extends BaseTest {
     public void deleteEntry() {
         loginPage.open()
                 .login("aadxeep@mailto.plus", "Nata1111")
-                .clickLoginButton();
-        entriesPage.open()
+                .clickLoginButton()
+                .open()
                 .selectEntry()
-                .clickDeleteEntriesButton()
-                .gettextEntry();
+                .clickDeleteEntriesButton();
 
-        assertEquals(entriesPage.gettextEntry(),"Новый текст","Запись не удалена");
+
+        assertEquals(entriesPage.noEntriesOnPage(), "No entries found", "Entry is not deleted");
 
     }
 
@@ -56,10 +53,14 @@ public class EntriesTest extends BaseTest {
     public void deletingAllEntries() {
         loginPage.open()
                 .login("aadxeep@mailto.plus", "Nata1111")
-                .clickLoginButton();
-        entriesPage.open()
+                .clickLoginButton()
+                .open()
                 .selectAllEntries()
                 .clickDeleteEntriesButton();
+
+
+        assertTrue(entriesPage.isThereNoEntries());
+
     }
 }
 

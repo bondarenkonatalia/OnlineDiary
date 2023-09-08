@@ -8,8 +8,8 @@ import org.openqa.selenium.WebDriver;
 
 @Log4j2
 public class LoginPage extends BasePage {
-    public static final By USER = By.xpath("//div//input[@name ='login']");
-    public static final By PASSWORD = By.xpath("//div//input[@name ='password']");
+    public static final By USER = By.xpath("//input[@name ='login']");
+    public static final By PASSWORD = By.xpath("//input[@name ='password']");
     public static final By LOGIN_BUTTON = By.xpath("//div[@class = 'btn-text-content']");
     public static final By LOGIN_FIELD= By.xpath("//div[@class ='alert alert-danger']");
     public static final By MANDATORY_FIELD_USER = By.xpath("//div[@class='help-block ng-binding']");
