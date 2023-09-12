@@ -18,7 +18,7 @@ public class TagsPage extends BasePage {
     public static final By INPUT_TAG_NAME = By.xpath("//input[@ng-change='resetFormStatus()']");
     public static final By BUTTON_OK = By.xpath("//button[@class='btn btn-default']");
     public static final By ENTRIES = By.xpath("(//div[@class=' body'])[1]");
-    public static final By NEW_TAG_INPUT = By.id("new-tag");
+    public static final By NEW_TAG_INPUT = By.xpath("//input[@ng-model='model.newTag']");
     public static final By CREATE_NEW_TAG_BUTTON = By.id("assign-new-tag");
     public static final By DELETE_TAG_BUTTON = By.xpath("//a[@ng-click='deleteTag(tag)']");
     public static final By HOME_BUTTON = By.id("back-to-overview");
@@ -32,7 +32,7 @@ public class TagsPage extends BasePage {
     @Step("Нажать на кнопку для редактирования тегов")
     public TagsPage buttonEditTags() {
         driver.findElement(EDIT_TAGS).click();
-        log.info("click the button edit teg");
+        log.info("Click the button edit teg");
         return this;
     }
 
@@ -60,25 +60,27 @@ public class TagsPage extends BasePage {
     @Step("Записать имя тега")
     public TagsPage writeTextToTag(String text) {
         driver.findElement(ENTRIES).click();
-        log.info("Writing text to tag field " + text);
+        log.info("Select entry");
         driver.findElement(NEW_TAG_INPUT).sendKeys(text);
+        log.info("Writing text to tag field " + text);
         return this;
     }
     @Step("Подтвердить создание тега")
     public TagsPage clickOk() {
         driver.findElement(CREATE_NEW_TAG_BUTTON).click();
-        log.info("Click on create new teg button with id:");
+        log.info("Click on create new teg button ");
         return this;
     }
     @Step("Нажать кнопку MANAGER_TAGS_BUTTON")
     public TagsPage clickButtonManagerTags() {
         driver.findElement(MANAGER_TAGS_BUTTON).click();
+        log.info("Select entry " + MANAGER_TAGS_BUTTON);
         return new TagsPage(driver);
     }
     @Step("Нажать на кнопку удаления тегов")
     public TagsPage buttonDeleteTags() {
         driver.findElement(DELETE_TAG_BUTTON).click();
-        log.info("click the button delete teg");
+        log.info("Click the button delete teg " + DELETE_TAG_BUTTON);
         Alert alert = driver.switchTo().alert();
         alert.accept();
         return this;
@@ -92,12 +94,15 @@ public class TagsPage extends BasePage {
     @Step("Взять текст тега")
     public String getTextTeg() {
         List<WebElement>list = driver.findElements(LIST_OF_TAGS);
+        log.info("Put all elements into a list");
         return list.get(0).getText();
     }
     @Step("Взять текст из списка тегов")
     public String getTextListTeg() {
         driver.findElement(MANAGER_TAGS_BUTTON).click();
+        log.info("Select entry " + MANAGER_TAGS_BUTTON);
         List<WebElement>list = driver.findElements(LIST_OF_TAGS);
+        log.info("Put all elements into a list");
         return list.get(0).getText();
     }
     @Step("Убедиться, что на странице нет тегов")

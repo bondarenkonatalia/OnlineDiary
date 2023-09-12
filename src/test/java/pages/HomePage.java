@@ -17,7 +17,6 @@ public class HomePage extends BasePage {
     }
 
     @Step("Открыть сайт")
-
     public HomePage open() {
         driver.get(URL+"en");
         log.info("Open site with URL:" + URL);

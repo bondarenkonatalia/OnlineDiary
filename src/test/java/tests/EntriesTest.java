@@ -13,12 +13,23 @@ public class EntriesTest extends BaseTest {
         loginPage.open()
                 .login("aadxeep@mailto.plus", "Nata1111")
                 .clickLoginButton()
-                .open()
                 .clickCreateAnEntryButton()
-                .createNewEntryWithText("Даже если вас съели – у вас два выхода")
+                .createNewEntryWithText("Человек всесилен, пока ничем не занят")
                 .clickHomeButton();
 
-        assertEquals(entriesPage.getTextEntry(), "Даже если вас съели – у вас два выхода", "Запись не создана");
+        assertEquals(entriesPage.getTextEntry(), "Человек всесилен, пока ничем не занят", "Запись не создана");
+
+    }
+    @Test(description = "Проверка удаления записи")
+    public void deleteEntry() {
+        loginPage.open()
+                .login("aadxeep@mailto.plus", "Nata1111")
+                .clickLoginButton()
+                .selectEntry()
+                .clickDeleteEntriesButton();
+
+
+        assertEquals(entriesPage.noEntriesOnPage(), "No entries found", "Entry is not deleted");
 
     }
 
@@ -28,24 +39,13 @@ public class EntriesTest extends BaseTest {
                 .login("aadxeep@mailto.plus", "Nata1111")
                 .clickLoginButton()
                 .open()
+                .clickCreateAnEntryButton()
+                .createNewEntryWithText("Чтобы в жизнь пришло что-то новое, нужно освободить для него место")
+                .clickHomeButton()
                 .editingPost("Новый текст")
                 .clickHomeButton();
 
         assertEquals(entriesPage.getTextEntry(), "Новый текст", "Запись не изменилась");
-
-    }
-
-    @Test(description = "Проверка удаления записи")
-    public void deleteEntry() {
-        loginPage.open()
-                .login("aadxeep@mailto.plus", "Nata1111")
-                .clickLoginButton()
-                .open()
-                .selectEntry()
-                .clickDeleteEntriesButton();
-
-
-        assertEquals(entriesPage.noEntriesOnPage(), "No entries found", "Entry is not deleted");
 
     }
 
@@ -54,7 +54,9 @@ public class EntriesTest extends BaseTest {
         loginPage.open()
                 .login("aadxeep@mailto.plus", "Nata1111")
                 .clickLoginButton()
-                .open()
+                .clickCreateAnEntryButton()
+                .createNewEntryWithText("Чтобы в жизнь пришло что-то новое, нужно освободить для него место")
+                .clickHomeButton()
                 .selectAllEntries()
                 .clickDeleteEntriesButton();
 

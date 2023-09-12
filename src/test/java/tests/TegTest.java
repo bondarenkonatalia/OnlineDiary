@@ -12,34 +12,32 @@ public class TegTest extends BaseTest {
         loginPage.open()
                 .login("aadxeep@mailto.plus", "Nata1111")
                 .clickLoginButton()
-                .open();
+                .open()
+                .clickCreateAnEntryButton()
+                .createNewEntryWithText("Даже если вас съели – у вас два выхода")
+                .clickHomeButton();
         tagsPage.clickEntries()
-                .writeTextToTag("TEG 1")
+                .writeTextToTag("TEG 3")
                 .clickOk()
                 .clickHomeButton();
 
-        assertEquals(tagsPage.getTextListTeg(), "TEG 1", "Тег не создан");
+        assertEquals(tagsPage.getTextListTeg(), "TEG 3", "Тег не создан");
 
-    }
-
-    @Test(description = "Проверка редактирования  тега")
-    public void editTag() {
-        loginPage.open()
-                .login("aadxeep@mailto.plus", "Nata1111")
-                .clickLoginButton();
-        tagsPage.clickButtonManagerTags()
-                .buttonEditTags()
-                .createTagName("TEG33")
-                .clickOnOkButton();
-
-        assertEquals(tagsPage.getTextTeg(), "TEG33", "Тег не изменён");
     }
 
     @Test(description = "Проверка удаления тега")
     public void deleteTag() {
         loginPage.open()
                 .login("aadxeep@mailto.plus", "Nata1111")
-                .clickLoginButton();
+                .clickLoginButton()
+                .open()
+                .clickCreateAnEntryButton()
+                .createNewEntryWithText("Даже если вас съели – у вас два выхода")
+                .clickHomeButton();
+        tagsPage.clickEntries()
+                .writeTextToTag("TEG 3")
+                .clickOk()
+                .clickHomeButton();
         tagsPage.clickButtonManagerTags()
                 .buttonDeleteTags();
 
@@ -48,5 +46,25 @@ public class TegTest extends BaseTest {
 
     }
 
+    @Test(description = "Проверка редактирования  тега")
+    public void editTag() {
+        loginPage.open()
+                .login("aadxeep@mailto.plus", "Nata1111")
+                .clickLoginButton()
+                .open()
+                .clickCreateAnEntryButton()
+                .createNewEntryWithText("Даже если вас съели – у вас два выхода")
+                .clickHomeButton();
+        tagsPage.clickEntries()
+                .writeTextToTag("TEG 1")
+                .clickOk()
+                .clickHomeButton()
+                .clickButtonManagerTags()
+                .buttonEditTags()
+                .createTagName("TEG33")
+                .clickOnOkButton();
+
+        assertEquals(tagsPage.getTextTeg(), "TEG33", "Тег не изменён");
+    }
 
 }

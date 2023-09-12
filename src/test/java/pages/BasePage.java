@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.xml.sax.Locator;
 
+import java.time.Duration;
+
 @Log4j2
 public abstract class BasePage {
 
@@ -16,7 +18,7 @@ public abstract class BasePage {
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver, 5);
+        wait = new WebDriverWait(driver,(5));
     }
 
     public abstract boolean isPageOpen();

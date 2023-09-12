@@ -16,7 +16,7 @@ public class EntriesPage extends BasePage {
     public static final By NEW_ENTRY = By.xpath("//div[@ng-bind-html='entry.body']");
     public static final By DELETE_ENTRIES_BUTTON = By.id("delete-entries");
     public static final By RECORD_INPUT_FIELD = By.xpath("//div[contains(@class,'contenteditable cke_editable')]");
-    public static final By SAVE_BUTTON = By.xpath("//a[@title='Save']");
+    public static final By SAVE_BUTTON = By.xpath("//span[@class='cke_button_icon']");
     public static final By HOME_BUTTON = By.id("back-to-overview");
     public static final By CHECKBOX_ENTRY = By.xpath("//input[@ng-change='updateSelectionState()']");
     public static final By ALL_CHECKBOX = By.xpath("//input[@ng-change='selectOrUnselectAll()']");
@@ -25,24 +25,26 @@ public class EntriesPage extends BasePage {
     public EntriesPage(WebDriver driver) {
         super(driver);
     }
-
     @Step("Открыть страницу")
     public EntriesPage open() {
         driver.get(URL + "app/#/entries");
         log.info("Open page with URL:" + URL);
         return this;
     }
+
     @Step("Нажать кнопку CREATE_AN_ENTRY_BUTTON")
     public EntriesPage clickCreateAnEntryButton() {
         driver.findElement(CREATE_AN_ENTRY_BUTTON).click();
         log.info("Push button CREATE_AN_ENTRY_BUTTON");
+        driver.findElement(RECORD_INPUT_FIELD).click();
+        log.info("Entry field opened");
         return this;
     }
 
     @Step("Создание новой записи с текстом")
     public EntriesPage createNewEntryWithText(String text) {
         driver.findElement(RECORD_INPUT_FIELD).sendKeys(text);
-        log.info("Entry field opened");
+        log.info("Enter text in the input field " + text);
         driver.findElement(SAVE_BUTTON).click();
         log.info("Press save button");
         return this;
@@ -61,7 +63,9 @@ public class EntriesPage extends BasePage {
     @Step("Выбрать запись из списка")
     public EntriesPage selectEntry() {
         List<WebElement> list = driver.findElements(CHECKBOX_ENTRY);
+        log.info("Put all elements into a list");
         list.get(0).click();
+        log.info("Select an item from a list");
         return this;
     }
     @Step("Выбрать все записи")
@@ -73,9 +77,11 @@ public class EntriesPage extends BasePage {
     @Step("Редактирование созданной записи")
     public EntriesPage editingPost(String text) {
         driver.findElement(NEW_ENTRY).click();
+        log.info("Select created entry");
         driver.findElement(RECORD_INPUT_FIELD).clear();
+        log.info("Clear entry field");
         driver.findElement(RECORD_INPUT_FIELD).sendKeys(text);
-        log.info("Entry field opened");
+        log.info("Enter text in the input field");
         driver.findElement(SAVE_BUTTON).click();
         log.info("Press save button");
         return this;
@@ -88,12 +94,13 @@ public class EntriesPage extends BasePage {
         alert.accept();
         return this;
     }
-    @Step("Нахождение абзаца «Записи не найдены")
+    @Step("Найти абзац «Записи не найдены")
     public boolean isThereNoEntries() {
         driver.findElement(NO_RECORDS);
         log.info("Finding the 'No entries found paragraph'");
         return true;
     }
+
     @Step("Убедиться, что на странице нет записей")
     public String noEntriesOnPage() {
         return driver.findElement(NO_RECORDS).getText();
