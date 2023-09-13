@@ -4,25 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="159a4e6e-9455-4f41-ae2a-50b1a97d3c71" name="Changes" comment="+ добавила тесты">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/UploadImagePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/UploadImageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2-test.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/ЧЕЛОВЕЧЕК.png" afterDir="false" />
+    <list default="true" id="159a4e6e-9455-4f41-ae2a-50b1a97d3c71" name="Changes" comment="с изменениями">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logo-monkkee.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/EntriesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/EntriesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/SettingsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/SettingsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TagsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TagsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/UploadImagePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/UploadImagePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/EntriesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/EntriesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SettingsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SettingsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TegTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TegTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/UploadImageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/UploadImageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/TestListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/regression.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SettingsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EntriesTest.deletingAllEntries" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OnlineDiary" />
       <extension name="coverage">
         <pattern>
@@ -121,15 +112,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SettingsTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="tests.EntriesTest" />
+      <option name="METHOD_NAME" value="deletingAllEntries" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UploadImageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UploadImageTest.loadingFileFormat" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OnlineDiary" />
       <extension name="coverage">
         <pattern>
@@ -139,7 +131,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.UploadImageTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="loadingFileFormat" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -151,8 +144,8 @@
         <item itemvalue="TestNG.E:/OnlineDiary/src/test/resources/regression.xml" />
         <item itemvalue="TestNG.EntriesTest" />
         <item itemvalue="TestNG.EntriesTest.deleteEntry" />
-        <item itemvalue="TestNG.SettingsTest" />
-        <item itemvalue="TestNG.UploadImageTest" />
+        <item itemvalue="TestNG.EntriesTest.deletingAllEntries" />
+        <item itemvalue="TestNG.UploadImageTest.loadingFileFormat" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +214,21 @@
       <option name="project" value="LOCAL" />
       <updated>1694180803546</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="добавила логирование">
+      <created>1694527572918</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1694527572918</updated>
+    </task>
+    <task id="LOCAL-00010" summary="с изменениями">
+      <created>1694625933758</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694625933758</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,12 +246,13 @@
     <MESSAGE value=" EntriesTest" />
     <MESSAGE value=" TegPage" />
     <MESSAGE value=" TegTest" />
-    <MESSAGE value="с изменениями" />
     <MESSAGE value="с новыми тестами" />
     <MESSAGE value="+ добавила EntriesPage" />
     <MESSAGE value="+ добавила EntriesTest" />
     <MESSAGE value="+ добавила тесты" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ добавила тесты" />
+    <MESSAGE value="добавила логирование" />
+    <MESSAGE value="с изменениями" />
+    <option name="LAST_COMMIT_MESSAGE" value="с изменениями" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

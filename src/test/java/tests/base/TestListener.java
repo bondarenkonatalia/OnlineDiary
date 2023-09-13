@@ -27,7 +27,7 @@ public class TestListener implements ITestListener {
         log.info(">>>>>>>>>>>>>>>TEST START: " + iTestContext.getName() + ">>>>>>>>>>>>>>>" );
     }
     public void onFinish(ITestContext iTestContext) {
-        log.info(">>>>>>>>>>>>>>>TEST FINISH: " + iTestContext.getName() + ">>>>>>>>>>>>>>>" );
+        log.info(">>>>>>>>>>>>>>>TEST FINISH >>>>>>>>>>>>>>>" );
     }
 
 }

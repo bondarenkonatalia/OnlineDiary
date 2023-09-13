@@ -8,6 +8,7 @@ import static org.testng.Assert.assertTrue;
 
 
 public class EntriesTest extends BaseTest {
+
     @Test(description = "Проверка создания новой записи")
     public void creatingNewEntry() {
         loginPage.open()
@@ -30,7 +31,6 @@ public class EntriesTest extends BaseTest {
 
 
         assertEquals(entriesPage.noEntriesOnPage(), "No entries found", "Entry is not deleted");
-
     }
 
     @Test(description = "Проверка редактирования записи")
