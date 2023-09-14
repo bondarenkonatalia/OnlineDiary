@@ -17,11 +17,11 @@ public class TegTest extends BaseTest {
                 .createNewEntryWithText("Даже если вас съели – у вас два выхода")
                 .clickHomeButton();
         tagsPage.clickEntries()
-                .writeTextToTag("TEG 3")
+                .writeTextToTag("TEG")
                 .clickOk()
                 .clickHomeButton();
 
-        assertEquals(tagsPage.getTextListTeg(), "TEG 3", "Тег не создан");
+        assertEquals(tagsPage.getTextListTeg(), "TEG", "Тег не создан");
 
     }
 
@@ -32,10 +32,10 @@ public class TegTest extends BaseTest {
                 .clickLoginButton()
                 .open()
                 .clickCreateAnEntryButton()
-                .createNewEntryWithText("Даже если вас съели – у вас два выхода")
+                .createNewEntryWithText("Счастлив не тот, у кого много, а тот, кому хватает")
                 .clickHomeButton();
         tagsPage.clickEntries()
-                .writeTextToTag("TEG 3")
+                .writeTextToTag("TEG")
                 .clickOk()
                 .clickHomeButton();
         tagsPage.clickButtonManagerTags()
@@ -53,18 +53,18 @@ public class TegTest extends BaseTest {
                 .clickLoginButton()
                 .open()
                 .clickCreateAnEntryButton()
-                .createNewEntryWithText("Даже если вас съели – у вас два выхода")
+                .createNewEntryWithText("В жизни нужно стремиться обгонять не других, а самого себя.")
                 .clickHomeButton();
         tagsPage.clickEntries()
-                .writeTextToTag("TEG 1")
+                .writeTextToTag("TEG")
                 .clickOk()
                 .clickHomeButton()
                 .clickButtonManagerTags()
                 .buttonEditTags()
-                .createTagName("TEG33")
+                .createTagName("NEW_TEG")
                 .clickOnOkButton();
 
-        assertEquals(tagsPage.getTextTeg(), "TEG33", "Тег не изменён");
+        assertEquals(tagsPage.getTextTeg(), "NEW_TEG", "Тег не изменён");
     }
 
 }

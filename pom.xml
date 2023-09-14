@@ -20,7 +20,6 @@
         <projectlombok.version>1.18.26</projectlombok.version>
         <logging.log4j.version>2.14.1</logging.log4j.version>
         <dataformat.version>2.12.3</dataformat.version>
-        <plugins.version>3.0.0-M3</plugins.version>
         <suiteXmlFile>src/test/resources/regression.xml</suiteXmlFile>
 
     </properties>
@@ -84,7 +83,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>${plugins.version}</version>
+                <version>3.0.0-M3</version>
                 <configuration>
                     <argLine>
                         -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar -Xmx256m

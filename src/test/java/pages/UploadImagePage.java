@@ -32,7 +32,7 @@ public class UploadImagePage extends BasePage {
     }
 
     @Step("Нажать кнопку IMAGE_BUTTON")
-    public UploadImagePage buttonBlockEmage() {
+    public UploadImagePage buttonBlockImage() {
         driver.findElement(IMAGE_BUTTON).click();
         log.info("Select button block");
         return this;

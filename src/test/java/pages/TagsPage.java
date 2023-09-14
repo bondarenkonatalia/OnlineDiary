@@ -32,7 +32,7 @@ public class TagsPage extends BasePage {
     @Step("Нажать на кнопку для редактирования тегов")
     public TagsPage buttonEditTags() {
         driver.findElement(EDIT_TAGS).click();
-        log.info("Click the button edit teg");
+        log.info("Click the button edit teg"+ EDIT_TAGS);
         return this;
     }
 
@@ -41,14 +41,14 @@ public class TagsPage extends BasePage {
         driver.findElement(INPUT_TAG_NAME).clear();
         log.info("Clear tag entry field");
         driver.findElement(INPUT_TAG_NAME).sendKeys(text);
-        log.info("Enter tag name");
+        log.info("Enter tag name"+ text);
         return this;
     }
 
     @Step("Нажать кнопку OK")
     public TagsPage clickOnOkButton() {
         driver.findElement(BUTTON_OK).click();
-        log.info("Click the confirmation button, change the tag with the xpath.:");
+        log.info("Click the confirmation button, change the tag");
         return this;
     }
     @Step("Выбрать запись")

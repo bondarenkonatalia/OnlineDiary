@@ -26,7 +26,7 @@ public class HomePage extends BasePage {
 
     public HomePage clickLoginPrimary() {
         driver.findElement(LOGIN_PRIMARY).click();
-        log.info("Click on loginButton with xPath: By.xpath");
+        log.info("Click on loginButton"+ LOGIN_PRIMARY);
         return this;
     }
 

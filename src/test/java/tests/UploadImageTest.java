@@ -12,7 +12,7 @@ public class UploadImageTest extends BaseTest {
                 .login("aadxeep@mailto.plus", "Nata1111")
                 .clickLoginButton()
                 .clickCreateAnEntryButton();
-        uploadImagePage.buttonBlockEmage()
+        uploadImagePage.buttonBlockImage()
                 .selectFileLoading()
                 .clickButtonSave();
 

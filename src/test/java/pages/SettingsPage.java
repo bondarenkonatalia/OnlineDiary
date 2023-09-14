@@ -22,8 +22,8 @@ public class SettingsPage extends BasePage {
 
     @Step("Нажать кнопку SETTINGS_BUTTON")
     public SettingsPage clickSettingButton() {
-        log.info("Press button with xPath: "+ SETTINGS_BUTTON);
         driver.findElement(SETTINGS_BUTTON).click();
+        log.info("Press button "+ SETTINGS_BUTTON);
         return this;
     }
     @Step("Выбрать настройки Language из списка настроек")

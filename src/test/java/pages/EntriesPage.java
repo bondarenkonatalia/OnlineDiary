@@ -35,9 +35,9 @@ public class EntriesPage extends BasePage {
     @Step("Нажать кнопку CREATE_AN_ENTRY_BUTTON")
     public EntriesPage clickCreateAnEntryButton() {
         driver.findElement(CREATE_AN_ENTRY_BUTTON).click();
-        log.info("Push button CREATE_AN_ENTRY_BUTTON");
+        log.info("Push button CREATE_AN_ENTRY_BUTTON"+ CREATE_AN_ENTRY_BUTTON);
         driver.findElement(RECORD_INPUT_FIELD).click();
-        log.info("Entry field opened");
+        log.info("Entry field opened"+ RECORD_INPUT_FIELD);
         return this;
     }
 
@@ -46,7 +46,7 @@ public class EntriesPage extends BasePage {
         driver.findElement(RECORD_INPUT_FIELD).sendKeys(text);
         log.info("Enter text in the input field " + text);
         driver.findElement(SAVE_BUTTON).click();
-        log.info("Press save button");
+        log.info("Press save button"+ SAVE_BUTTON);
         return this;
     }
     @Step("Взять текст созданной записи")
@@ -81,15 +81,15 @@ public class EntriesPage extends BasePage {
         driver.findElement(RECORD_INPUT_FIELD).clear();
         log.info("Clear entry field");
         driver.findElement(RECORD_INPUT_FIELD).sendKeys(text);
-        log.info("Enter text in the input field");
+        log.info("Enter text in the input field" + text);
         driver.findElement(SAVE_BUTTON).click();
-        log.info("Press save button");
+        log.info("Press save button"+ SAVE_BUTTON);
         return this;
     }
     @Step("Нажать кнопку DELETE_ENTRIES_BUTTON")
     public EntriesPage clickDeleteEntriesButton() {
         driver.findElement(DELETE_ENTRIES_BUTTON).click();
-        log.info("Press delete entries button with xPath: "+ DELETE_ENTRIES_BUTTON);
+        log.info("Press delete entries button "+ DELETE_ENTRIES_BUTTON);
         Alert alert = driver.switchTo().alert();
         alert.accept();
         return this;
