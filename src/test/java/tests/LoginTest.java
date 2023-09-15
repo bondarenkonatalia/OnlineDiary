@@ -12,7 +12,7 @@ public class LoginTest extends BaseTest {
     public void loginVerificationWithValidData() {
         boolean entriesPageIsopened =
                 loginPage.open()
-                        .login("aadxeep@mailto.plus", "Nata1111")
+                        .login(user, password)
                         .clickLoginButton()
                         .isPageOpen();
 
@@ -22,7 +22,7 @@ public class LoginTest extends BaseTest {
     @Test(description = "Проверка логина с не валидными данными")
     public void loginVerificationWithInvalidData() {
         loginPage.open()
-                .login("adxeep@mailto.plus", "Nata1111")
+                .login("adxeep@mailto.plus", password)
                 .clickLoginButton();
 
         assertEquals(loginPage.getLoginErrorMessage(), "Login failed", "Ошибка ввода");
@@ -31,7 +31,7 @@ public class LoginTest extends BaseTest {
     @Test(description = "Проверка логина с пустым полем User")
     public void validatingLoginWithEmptyUserField() {
         loginPage.open()
-                .login("", "Nata1111")
+                .login("",password)
                 .clickLoginButton();
 
         assertEquals(loginPage.getMessageAboutEmptyUserField(), "Mandatory field", "Пустое поле");
@@ -40,7 +40,7 @@ public class LoginTest extends BaseTest {
     @Test(description = "Проверка логина с пустым полем Password")
     public void validatingLoginWithEmptyPasswordField() {
         loginPage.open()
-                .login("aadxeep@mailto.plus", "")
+                .login(user, "")
                 .clickLoginButton();
 
         assertEquals(loginPage.getMessageAboutEmptyPasswordField(), "Mandatory field", "Пустое поле");

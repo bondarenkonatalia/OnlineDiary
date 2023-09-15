@@ -1,625 +1,167 @@
-2023-09-13 21:03:36.675 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: test 2>>>>>>>>>>>>>>>
-2023-09-13 21:03:36.675 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: test 1>>>>>>>>>>>>>>>
-2023-09-13 21:03:39.044 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: goToLoginPage>>>>>>>>>>>>>>>
-2023-09-13 21:03:39.044 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: creatingNewEntry>>>>>>>>>>>>>>>
-2023-09-13 21:03:39.750 INFO [TestNG-tests-1] [pages.HomePage] - Open site with URL:https://monkkee.com/
-2023-09-13 21:03:40.186 INFO [TestNG-tests-1] [pages.HomePage] - Click on loginButton with xPath: By.xpath
-2023-09-13 21:03:40.348 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-13 21:03:40.527 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-13 21:03:40.613 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-13 21:03:40.691 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-13 21:03:41.220 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-13 21:03:41.862 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-13 21:03:41.991 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Человек всесилен, пока ничем не занят
-2023-09-13 21:03:42.049 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-13 21:03:42.106 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-13 21:03:42.293 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: creatingNewEntry>>>>>>>>>>>>>>>
-2023-09-13 21:03:43.162 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: deleteEntry>>>>>>>>>>>>>>>
-2023-09-13 21:03:43.924 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-13 21:03:44.078 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-13 21:03:44.195 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-13 21:03:44.264 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-13 21:03:44.885 INFO [TestNG-tests-2] [pages.EntriesPage] - Put all elements into a list
-2023-09-13 21:03:44.921 INFO [TestNG-tests-2] [pages.EntriesPage] - Select an item from a list
-2023-09-13 21:03:44.994 INFO [TestNG-tests-2] [pages.EntriesPage] - Press delete entries button with xPath: By.id: delete-entries
-2023-09-13 21:03:45.176 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: deleteEntry>>>>>>>>>>>>>>>
-2023-09-13 21:03:46.028 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: deletingAllEntries>>>>>>>>>>>>>>>
-2023-09-13 21:03:46.752 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-13 21:03:46.907 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-13 21:03:46.987 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-13 21:03:47.059 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-13 21:03:47.587 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-13 21:03:48.178 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-13 21:03:48.352 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Чтобы в жизнь пришло что-то новое, нужно освободить для него место
-2023-09-13 21:03:48.413 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-13 21:03:48.472 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-13 21:03:48.681 INFO [TestNG-tests-2] [pages.EntriesPage] - Click on all checkbox with xPath: By.xpath: //input[@ng-change='selectOrUnselectAll()']
-2023-09-13 21:03:48.739 INFO [TestNG-tests-2] [pages.EntriesPage] - Press delete entries button with xPath: By.id: delete-entries
-2023-09-13 21:03:48.890 INFO [TestNG-tests-2] [pages.EntriesPage] - Finding the 'No entries found paragraph'
-2023-09-13 21:03:48.892 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: deletingAllEntries>>>>>>>>>>>>>>>
-2023-09-13 21:03:49.714 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: editEntry>>>>>>>>>>>>>>>
-2023-09-13 21:03:50.235 INFO [TestNG-tests-1] [pages.BasePage] - 
-2023-09-13 21:03:50.284 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: goToLoginPage>>>>>>>>>>>>>>>
-2023-09-13 21:03:50.467 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-13 21:03:50.646 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-13 21:03:50.836 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-13 21:03:50.934 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-13 21:03:50.984 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
-2023-09-13 21:03:51.093 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: loginVerificationWithInvalidData>>>>>>>>>>>>>>>
-2023-09-13 21:03:51.586 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-13 21:03:51.913 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-13 21:03:51.993 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field adxeep@mailto.plus
-2023-09-13 21:03:52.085 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-13 21:03:52.154 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-13 21:03:52.155 INFO [TestNG-tests-1] [pages.LoginPage] - Login error message
-2023-09-13 21:03:52.272 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-13 21:03:52.425 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Чтобы в жизнь пришло что-то новое, нужно освободить для него место
-2023-09-13 21:03:52.478 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-13 21:03:52.540 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-13 21:03:52.624 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: loginVerificationWithInvalidData>>>>>>>>>>>>>>>
-2023-09-13 21:03:52.791 INFO [TestNG-tests-2] [pages.EntriesPage] - Select created entry
-2023-09-13 21:03:52.974 INFO [TestNG-tests-2] [pages.EntriesPage] - Clear entry field
-2023-09-13 21:03:53.151 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field
-2023-09-13 21:03:53.214 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-13 21:03:53.258 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-13 21:03:53.391 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: loginVerificationWithValidData>>>>>>>>>>>>>>>
-2023-09-13 21:03:53.470 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: editEntry>>>>>>>>>>>>>>>
-2023-09-13 21:03:54.152 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-13 21:03:54.235 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: createTeg>>>>>>>>>>>>>>>
-2023-09-13 21:03:54.365 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-13 21:03:54.438 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-13 21:03:54.510 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-13 21:03:55.071 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: loginVerificationWithValidData>>>>>>>>>>>>>>>
-2023-09-13 21:03:55.299 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-13 21:03:55.497 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-13 21:03:55.690 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-13 21:03:55.756 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-13 21:03:55.788 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
-2023-09-13 21:03:55.812 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: validatingLoginWithEmptyField>>>>>>>>>>>>>>>
-2023-09-13 21:03:56.349 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-13 21:03:56.479 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-13 21:03:56.663 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field 
-2023-09-13 21:03:56.728 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field 
-2023-09-13 21:03:56.780 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-13 21:03:56.781 INFO [TestNG-tests-1] [pages.LoginPage] - Mandatory field
-2023-09-13 21:03:56.814 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: validatingLoginWithEmptyField>>>>>>>>>>>>>>>
-2023-09-13 21:03:57.106 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-13 21:03:57.270 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Даже если вас съели – у вас два выхода
-2023-09-13 21:03:57.403 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-13 21:03:57.474 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-13 21:03:57.667 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: validatingLoginWithEmptyPasswordField>>>>>>>>>>>>>>>
-2023-09-13 21:03:57.682 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-13 21:03:57.734 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-13 21:03:57.855 INFO [TestNG-tests-2] [pages.TagsPage] - Writing text to tag field TEG 3
-2023-09-13 21:03:57.931 INFO [TestNG-tests-2] [pages.TagsPage] - Click on create new teg button 
-2023-09-13 21:03:57.986 INFO [TestNG-tests-2] [pages.TagsPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-13 21:03:58.160 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry By.xpath: //a[@class='tags__manage-link']
-2023-09-13 21:03:58.293 INFO [TestNG-tests-2] [pages.TagsPage] - Put all elements into a list
-2023-09-13 21:03:58.308 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: createTeg>>>>>>>>>>>>>>>
-2023-09-13 21:03:58.314 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-13 21:03:58.490 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-13 21:03:58.571 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field 
-2023-09-13 21:03:58.641 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-13 21:03:58.642 INFO [TestNG-tests-1] [pages.LoginPage] - Mandatory field
-2023-09-13 21:03:58.676 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: validatingLoginWithEmptyPasswordField>>>>>>>>>>>>>>>
-2023-09-13 21:03:59.122 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: deleteTag>>>>>>>>>>>>>>>
-2023-09-13 21:03:59.672 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: validatingLoginWithEmptyUserField>>>>>>>>>>>>>>>
-2023-09-13 21:03:59.936 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-13 21:04:00.067 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-13 21:04:00.143 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-13 21:04:00.203 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-13 21:04:00.237 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
-2023-09-13 21:04:00.443 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-13 21:04:00.618 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field 
-2023-09-13 21:04:00.692 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-13 21:04:00.753 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-13 21:04:00.753 INFO [TestNG-tests-1] [pages.LoginPage] - Mandatory field
-2023-09-13 21:04:00.786 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: validatingLoginWithEmptyUserField>>>>>>>>>>>>>>>
-2023-09-13 21:04:01.025 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-13 21:04:01.580 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: loadingFileFormat>>>>>>>>>>>>>>>
-2023-09-13 21:04:01.649 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-13 21:04:01.777 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Даже если вас съели – у вас два выхода
-2023-09-13 21:04:01.833 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-13 21:04:01.887 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-13 21:04:02.078 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-13 21:04:02.134 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-13 21:04:02.254 INFO [TestNG-tests-2] [pages.TagsPage] - Writing text to tag field TEG 3
-2023-09-13 21:04:02.311 INFO [TestNG-tests-2] [pages.TagsPage] - Click on create new teg button 
-2023-09-13 21:04:02.372 INFO [TestNG-tests-2] [pages.TagsPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-13 21:04:02.477 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-13 21:04:02.535 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry By.xpath: //a[@class='tags__manage-link']
-2023-09-13 21:04:02.636 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-13 21:04:02.668 INFO [TestNG-tests-2] [pages.TagsPage] - Click the button delete teg By.xpath: //a[@ng-click='deleteTag(tag)']
-2023-09-13 21:04:02.727 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: deleteTag>>>>>>>>>>>>>>>
-2023-09-13 21:04:02.731 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-13 21:04:02.801 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-13 21:04:03.518 INFO [TestNG-tests-1] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-13 21:04:03.543 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: editTag>>>>>>>>>>>>>>>
-2023-09-13 21:04:04.212 INFO [TestNG-tests-1] [pages.EntriesPage] - Entry field opened
-2023-09-13 21:04:04.284 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-13 21:04:04.288 INFO [TestNG-tests-1] [pages.UploadImagePage] - Select button block
-2023-09-13 21:04:04.440 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-13 21:04:04.512 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-13 21:04:04.593 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-13 21:04:04.630 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
-2023-09-13 21:04:04.995 INFO [TestNG-tests-1] [pages.UploadImagePage] - Uploading a picture
-2023-09-13 21:04:05.083 INFO [TestNG-tests-1] [pages.UploadImagePage] - Click button ok
-2023-09-13 21:04:05.149 INFO [TestNG-tests-1] [pages.UploadImagePage] - ClickBy.xpath: //span[@class = 'cke_button_icon']
-2023-09-13 21:04:05.187 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: loadingFileFormat>>>>>>>>>>>>>>>
-2023-09-13 21:04:05.251 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-13 21:04:05.355 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST FINISH >>>>>>>>>>>>>>>
-2023-09-13 21:04:05.917 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-13 21:04:06.020 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Даже если вас съели – у вас два выхода
-2023-09-13 21:04:06.076 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-13 21:04:06.122 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-13 21:04:06.357 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-13 21:04:06.399 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-13 21:04:06.518 INFO [TestNG-tests-2] [pages.TagsPage] - Writing text to tag field TEG 1
-2023-09-13 21:04:06.583 INFO [TestNG-tests-2] [pages.TagsPage] - Click on create new teg button 
-2023-09-13 21:04:06.641 INFO [TestNG-tests-2] [pages.TagsPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-13 21:04:06.829 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry By.xpath: //a[@class='tags__manage-link']
-2023-09-13 21:04:06.973 INFO [TestNG-tests-2] [pages.TagsPage] - Click the button edit teg
-2023-09-13 21:04:07.087 INFO [TestNG-tests-2] [pages.TagsPage] - Clear tag entry field
-2023-09-13 21:04:07.141 INFO [TestNG-tests-2] [pages.TagsPage] - Enter tag name
-2023-09-13 21:04:07.206 INFO [TestNG-tests-2] [pages.TagsPage] - Click the confirmation button, change the tag with the xpath.:
-2023-09-13 21:04:07.408 INFO [TestNG-tests-2] [pages.TagsPage] - Put all elements into a list
-2023-09-13 21:04:07.423 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: editTag>>>>>>>>>>>>>>>
-2023-09-13 21:04:07.593 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST FINISH >>>>>>>>>>>>>>>
-2023-09-14 16:17:22.677 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: test 2>>>>>>>>>>>>>>>
-2023-09-14 16:17:22.677 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: test 1>>>>>>>>>>>>>>>
-2023-09-14 16:17:26.184 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: goToLoginPage>>>>>>>>>>>>>>>
-2023-09-14 16:17:26.184 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: creatingNewEntry>>>>>>>>>>>>>>>
-2023-09-14 16:17:26.744 INFO [TestNG-tests-1] [pages.HomePage] - Open site with URL:https://monkkee.com/
-2023-09-14 16:17:26.934 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 16:17:27.100 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 16:17:27.173 INFO [TestNG-tests-1] [pages.HomePage] - Click on loginButton with xPath: By.xpath
-2023-09-14 16:17:27.203 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 16:17:27.270 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 16:17:27.807 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 16:17:28.366 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 16:17:28.479 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Человек всесилен, пока ничем не занят
-2023-09-14 16:17:28.541 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 16:17:28.603 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 16:17:28.776 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: creatingNewEntry>>>>>>>>>>>>>>>
-2023-09-14 16:17:29.564 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: deleteEntry>>>>>>>>>>>>>>>
-2023-09-14 16:17:30.379 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 16:17:30.528 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 16:17:30.613 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 16:17:30.672 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 16:17:31.332 INFO [TestNG-tests-2] [pages.EntriesPage] - Put all elements into a list
-2023-09-14 16:17:31.395 INFO [TestNG-tests-2] [pages.EntriesPage] - Select an item from a list
-2023-09-14 16:17:31.463 INFO [TestNG-tests-2] [pages.EntriesPage] - Press delete entries button with xPath: By.id: delete-entries
-2023-09-14 16:17:31.637 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: deleteEntry>>>>>>>>>>>>>>>
-2023-09-14 16:17:32.406 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: deletingAllEntries>>>>>>>>>>>>>>>
-2023-09-14 16:17:33.054 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 16:17:33.211 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 16:17:33.288 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 16:17:33.359 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 16:17:33.980 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 16:17:34.638 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 16:17:34.792 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Чтобы в жизнь пришло что-то новое, нужно освободить для него место
-2023-09-14 16:17:34.845 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 16:17:34.909 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 16:17:35.222 INFO [TestNG-tests-2] [pages.EntriesPage] - Click on all checkbox with xPath: By.xpath: //input[@ng-change='selectOrUnselectAll()']
-2023-09-14 16:17:35.277 INFO [TestNG-tests-2] [pages.EntriesPage] - Press delete entries button with xPath: By.id: delete-entries
-2023-09-14 16:17:35.426 INFO [TestNG-tests-2] [pages.EntriesPage] - Finding the 'No entries found paragraph'
-2023-09-14 16:17:35.428 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: deletingAllEntries>>>>>>>>>>>>>>>
-2023-09-14 16:17:36.222 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: editEntry>>>>>>>>>>>>>>>
-2023-09-14 16:17:36.881 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 16:17:37.045 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 16:17:37.134 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 16:17:37.194 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 16:17:37.235 INFO [TestNG-tests-1] [pages.BasePage] - 
-2023-09-14 16:17:37.237 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
-2023-09-14 16:17:37.294 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: goToLoginPage>>>>>>>>>>>>>>>
-2023-09-14 16:17:37.864 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 16:17:38.092 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: loginVerificationWithInvalidData>>>>>>>>>>>>>>>
-2023-09-14 16:17:38.534 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 16:17:38.673 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 16:17:38.759 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Чтобы в жизнь пришло что-то новое, нужно освободить для него место
-2023-09-14 16:17:38.815 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 16:17:38.853 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field adxeep@mailto.plus
-2023-09-14 16:17:38.871 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 16:17:38.933 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 16:17:38.990 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 16:17:38.990 INFO [TestNG-tests-1] [pages.LoginPage] - Login error message
-2023-09-14 16:17:39.070 INFO [TestNG-tests-2] [pages.EntriesPage] - Select created entry
-2023-09-14 16:17:39.250 INFO [TestNG-tests-2] [pages.EntriesPage] - Clear entry field
-2023-09-14 16:17:39.343 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field
-2023-09-14 16:17:39.400 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 16:17:39.453 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 16:17:39.459 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: loginVerificationWithInvalidData>>>>>>>>>>>>>>>
-2023-09-14 16:17:39.630 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: editEntry>>>>>>>>>>>>>>>
-2023-09-14 16:17:40.269 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: loginVerificationWithValidData>>>>>>>>>>>>>>>
-2023-09-14 16:17:40.533 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: createTeg>>>>>>>>>>>>>>>
-2023-09-14 16:17:41.106 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 16:17:41.277 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 16:17:41.334 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 16:17:41.459 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 16:17:41.491 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 16:17:41.550 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 16:17:41.614 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 16:17:41.697 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 16:17:41.734 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
-2023-09-14 16:17:42.233 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: loginVerificationWithValidData>>>>>>>>>>>>>>>
-2023-09-14 16:17:42.371 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 16:17:43.023 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: validatingLoginWithEmptyField>>>>>>>>>>>>>>>
-2023-09-14 16:17:43.082 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 16:17:43.198 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Даже если вас съели – у вас два выхода
-2023-09-14 16:17:43.256 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 16:17:43.317 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 16:17:43.678 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-14 16:17:43.729 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-14 16:17:43.871 INFO [TestNG-tests-2] [pages.TagsPage] - Writing text to tag field TEG 3
-2023-09-14 16:17:43.877 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 16:17:43.947 INFO [TestNG-tests-2] [pages.TagsPage] - Click on create new teg button 
-2023-09-14 16:17:44.012 INFO [TestNG-tests-2] [pages.TagsPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 16:17:44.039 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field 
-2023-09-14 16:17:44.109 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field 
-2023-09-14 16:17:44.157 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry By.xpath: //a[@class='tags__manage-link']
-2023-09-14 16:17:44.178 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 16:17:44.178 INFO [TestNG-tests-1] [pages.LoginPage] - Mandatory field
-2023-09-14 16:17:44.219 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: validatingLoginWithEmptyField>>>>>>>>>>>>>>>
-2023-09-14 16:17:44.262 INFO [TestNG-tests-2] [pages.TagsPage] - Put all elements into a list
-2023-09-14 16:17:44.278 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: createTeg>>>>>>>>>>>>>>>
-2023-09-14 16:17:45.038 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: validatingLoginWithEmptyPasswordField>>>>>>>>>>>>>>>
-2023-09-14 16:17:45.287 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: deleteTag>>>>>>>>>>>>>>>
-2023-09-14 16:17:45.659 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 16:17:45.821 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 16:17:45.895 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field 
-2023-09-14 16:17:45.957 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 16:17:45.958 INFO [TestNG-tests-1] [pages.LoginPage] - Mandatory field
-2023-09-14 16:17:46.001 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: validatingLoginWithEmptyPasswordField>>>>>>>>>>>>>>>
-2023-09-14 16:17:46.047 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 16:17:46.214 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 16:17:46.293 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 16:17:46.356 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 16:17:46.391 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
-2023-09-14 16:17:46.932 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: validatingLoginWithEmptyUserField>>>>>>>>>>>>>>>
-2023-09-14 16:17:47.171 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 16:17:48.047 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 16:17:48.107 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field 
-2023-09-14 16:17:48.185 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 16:17:48.244 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 16:17:48.244 INFO [TestNG-tests-1] [pages.LoginPage] - Mandatory field
-2023-09-14 16:17:48.279 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: validatingLoginWithEmptyUserField>>>>>>>>>>>>>>>
-2023-09-14 16:17:48.567 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 16:17:48.793 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Даже если вас съели – у вас два выхода
-2023-09-14 16:17:48.897 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 16:17:48.951 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 16:17:49.098 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: loadingFileFormat>>>>>>>>>>>>>>>
-2023-09-14 16:17:49.209 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-14 16:17:49.258 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-14 16:17:49.379 INFO [TestNG-tests-2] [pages.TagsPage] - Writing text to tag field TEG 3
-2023-09-14 16:17:49.451 INFO [TestNG-tests-2] [pages.TagsPage] - Click on create new teg button 
-2023-09-14 16:17:49.506 INFO [TestNG-tests-2] [pages.TagsPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 16:17:49.636 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry By.xpath: //a[@class='tags__manage-link']
-2023-09-14 16:17:49.779 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 16:17:49.836 INFO [TestNG-tests-2] [pages.TagsPage] - Click the button delete teg By.xpath: //a[@ng-click='deleteTag(tag)']
-2023-09-14 16:17:49.887 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: deleteTag>>>>>>>>>>>>>>>
-2023-09-14 16:17:49.935 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 16:17:50.047 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 16:17:50.108 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 16:17:50.725 INFO [TestNG-tests-1] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 16:17:50.770 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: editTag>>>>>>>>>>>>>>>
-2023-09-14 16:17:51.362 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 16:17:51.412 INFO [TestNG-tests-1] [pages.EntriesPage] - Entry field opened
-2023-09-14 16:17:51.491 INFO [TestNG-tests-1] [pages.UploadImagePage] - Select button block
-2023-09-14 16:17:51.538 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 16:17:51.620 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 16:17:51.678 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 16:17:51.722 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
-2023-09-14 16:17:52.201 INFO [TestNG-tests-1] [pages.UploadImagePage] - Uploading a picture
-2023-09-14 16:17:52.306 INFO [TestNG-tests-1] [pages.UploadImagePage] - Click button ok
-2023-09-14 16:17:52.378 INFO [TestNG-tests-1] [pages.UploadImagePage] - ClickBy.xpath: //span[@class = 'cke_button_icon']
-2023-09-14 16:17:52.415 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: loadingFileFormat>>>>>>>>>>>>>>>
-2023-09-14 16:17:52.481 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 16:17:52.718 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST FINISH >>>>>>>>>>>>>>>
-2023-09-14 16:17:53.068 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 16:17:53.176 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Даже если вас съели – у вас два выхода
-2023-09-14 16:17:53.230 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 16:17:53.288 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 16:17:53.525 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-14 16:17:53.576 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-14 16:17:53.780 INFO [TestNG-tests-2] [pages.TagsPage] - Writing text to tag field TEG 1
-2023-09-14 16:17:53.835 INFO [TestNG-tests-2] [pages.TagsPage] - Click on create new teg button 
-2023-09-14 16:17:53.898 INFO [TestNG-tests-2] [pages.TagsPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 16:17:54.025 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry By.xpath: //a[@class='tags__manage-link']
-2023-09-14 16:17:54.151 INFO [TestNG-tests-2] [pages.TagsPage] - Click the button edit teg
-2023-09-14 16:17:54.272 INFO [TestNG-tests-2] [pages.TagsPage] - Clear tag entry field
-2023-09-14 16:17:54.333 INFO [TestNG-tests-2] [pages.TagsPage] - Enter tag name
-2023-09-14 16:17:54.382 INFO [TestNG-tests-2] [pages.TagsPage] - Click the confirmation button, change the tag with the xpath.:
-2023-09-14 16:17:54.577 INFO [TestNG-tests-2] [pages.TagsPage] - Put all elements into a list
-2023-09-14 16:17:54.593 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: editTag>>>>>>>>>>>>>>>
-2023-09-14 16:17:54.777 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST FINISH >>>>>>>>>>>>>>>
-2023-09-14 18:33:11.753 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: test 2>>>>>>>>>>>>>>>
-2023-09-14 18:33:11.753 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: test 1>>>>>>>>>>>>>>>
-2023-09-14 18:33:15.738 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: goToLoginPage>>>>>>>>>>>>>>>
-2023-09-14 18:33:15.738 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: creatingNewEntry>>>>>>>>>>>>>>>
-2023-09-14 18:33:16.560 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:33:16.726 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:33:16.827 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:33:16.894 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:33:17.449 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 18:33:18.042 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 18:33:18.145 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Человек всесилен, пока ничем не занят
-2023-09-14 18:33:18.199 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 18:33:18.266 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:33:18.435 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: creatingNewEntry>>>>>>>>>>>>>>>
-2023-09-14 18:33:19.312 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: deleteEntry>>>>>>>>>>>>>>>
-2023-09-14 18:33:19.862 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:33:20.009 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:33:20.096 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:33:20.177 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:33:20.707 INFO [TestNG-tests-2] [pages.EntriesPage] - Put all elements into a list
-2023-09-14 18:33:20.764 INFO [TestNG-tests-2] [pages.EntriesPage] - Select an item from a list
-2023-09-14 18:33:20.826 INFO [TestNG-tests-2] [pages.EntriesPage] - Press delete entries button with xPath: By.id: delete-entries
-2023-09-14 18:33:21.000 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: deleteEntry>>>>>>>>>>>>>>>
-2023-09-14 18:33:21.858 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: deletingAllEntries>>>>>>>>>>>>>>>
-2023-09-14 18:33:22.995 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:33:23.148 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:33:23.233 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:33:23.302 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:33:23.793 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 18:33:24.221 INFO [TestNG-tests-1] [pages.HomePage] - Open site with URL:https://monkkee.com/
-2023-09-14 18:33:24.377 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 18:33:24.527 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Чтобы в жизнь пришло что-то новое, нужно освободить для него место
-2023-09-14 18:33:24.587 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 18:33:24.653 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:33:24.833 INFO [TestNG-tests-2] [pages.EntriesPage] - Click on all checkbox with xPath: By.xpath: //input[@ng-change='selectOrUnselectAll()']
-2023-09-14 18:33:24.887 INFO [TestNG-tests-2] [pages.EntriesPage] - Press delete entries button with xPath: By.id: delete-entries
-2023-09-14 18:33:25.039 INFO [TestNG-tests-2] [pages.EntriesPage] - Finding the 'No entries found paragraph'
-2023-09-14 18:33:25.044 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: deletingAllEntries>>>>>>>>>>>>>>>
-2023-09-14 18:33:25.839 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: editEntry>>>>>>>>>>>>>>>
-2023-09-14 18:33:26.551 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:33:26.757 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:33:26.843 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:33:26.906 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:33:26.936 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
-2023-09-14 18:33:27.527 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 18:33:28.186 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 18:33:28.340 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Чтобы в жизнь пришло что-то новое, нужно освободить для него место
-2023-09-14 18:33:28.395 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 18:33:28.455 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:33:28.663 INFO [TestNG-tests-2] [pages.EntriesPage] - Select created entry
-2023-09-14 18:33:28.846 INFO [TestNG-tests-2] [pages.EntriesPage] - Clear entry field
-2023-09-14 18:33:28.935 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field
-2023-09-14 18:33:28.980 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 18:33:29.031 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:33:29.206 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: editEntry>>>>>>>>>>>>>>>
-2023-09-14 18:33:30.077 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: createTeg>>>>>>>>>>>>>>>
-2023-09-14 18:33:31.387 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:33:31.536 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:33:31.607 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:33:31.672 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:33:31.707 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
-2023-09-14 18:33:32.280 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 18:33:32.880 INFO [TestNG-tests-1] [pages.HomePage] - Click on loginButton with xPath: By.xpath
-2023-09-14 18:33:32.920 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 18:33:33.036 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Даже если вас съели – у вас два выхода
-2023-09-14 18:33:33.098 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 18:33:33.160 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:33:33.415 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-14 18:33:33.460 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-14 18:33:33.587 INFO [TestNG-tests-2] [pages.TagsPage] - Writing text to tag field TEG
-2023-09-14 18:33:33.644 INFO [TestNG-tests-2] [pages.TagsPage] - Click on create new teg button 
-2023-09-14 18:33:33.706 INFO [TestNG-tests-2] [pages.TagsPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:33:33.895 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry By.xpath: //a[@class='tags__manage-link']
-2023-09-14 18:33:33.982 INFO [TestNG-tests-2] [pages.TagsPage] - Put all elements into a list
-2023-09-14 18:33:34.015 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST FINISH >>>>>>>>>>>>>>>
-2023-09-14 18:33:42.923 INFO [TestNG-tests-1] [pages.BasePage] - 
-2023-09-14 18:33:42.972 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: goToLoginPage>>>>>>>>>>>>>>>
-2023-09-14 18:33:43.687 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: loginVerificationWithInvalidData>>>>>>>>>>>>>>>
-2023-09-14 18:33:44.415 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:33:44.541 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field adxeep@mailto.plus
-2023-09-14 18:33:44.627 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:33:44.687 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:33:44.687 INFO [TestNG-tests-1] [pages.LoginPage] - Login error message
-2023-09-14 18:33:45.157 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: loginVerificationWithInvalidData>>>>>>>>>>>>>>>
-2023-09-14 18:33:45.944 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: loginVerificationWithValidData>>>>>>>>>>>>>>>
-2023-09-14 18:33:46.748 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:33:46.956 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:33:47.037 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:33:47.101 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:33:47.949 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: loginVerificationWithValidData>>>>>>>>>>>>>>>
-2023-09-14 18:33:48.704 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: validatingLoginWithEmptyField>>>>>>>>>>>>>>>
-2023-09-14 18:33:49.313 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:33:49.440 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field 
-2023-09-14 18:33:49.504 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field 
-2023-09-14 18:33:49.569 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:33:49.570 INFO [TestNG-tests-1] [pages.LoginPage] - Mandatory field
-2023-09-14 18:33:49.598 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: validatingLoginWithEmptyField>>>>>>>>>>>>>>>
-2023-09-14 18:33:50.374 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: validatingLoginWithEmptyPasswordField>>>>>>>>>>>>>>>
-2023-09-14 18:33:51.153 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:33:51.298 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:33:51.365 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field 
-2023-09-14 18:33:51.436 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:33:51.436 INFO [TestNG-tests-1] [pages.LoginPage] - Mandatory field
-2023-09-14 18:33:51.476 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: validatingLoginWithEmptyPasswordField>>>>>>>>>>>>>>>
-2023-09-14 18:33:52.287 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: validatingLoginWithEmptyUserField>>>>>>>>>>>>>>>
-2023-09-14 18:33:52.858 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:33:52.995 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field 
-2023-09-14 18:33:53.080 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:33:53.149 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:33:53.149 INFO [TestNG-tests-1] [pages.LoginPage] - Mandatory field
-2023-09-14 18:33:53.184 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: validatingLoginWithEmptyUserField>>>>>>>>>>>>>>>
-2023-09-14 18:33:53.961 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: loadingFileFormat>>>>>>>>>>>>>>>
-2023-09-14 18:33:54.658 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:33:54.786 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:33:54.872 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:33:54.931 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:33:55.600 INFO [TestNG-tests-1] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 18:33:56.233 INFO [TestNG-tests-1] [pages.EntriesPage] - Entry field opened
-2023-09-14 18:33:56.286 INFO [TestNG-tests-1] [pages.UploadImagePage] - Select button block
-2023-09-14 18:33:56.993 INFO [TestNG-tests-1] [pages.UploadImagePage] - Uploading a picture
-2023-09-14 18:33:57.075 INFO [TestNG-tests-1] [pages.UploadImagePage] - Click button ok
-2023-09-14 18:33:57.125 INFO [TestNG-tests-1] [pages.UploadImagePage] - ClickBy.xpath: //span[@class = 'cke_button_icon']
-2023-09-14 18:33:57.166 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: loadingFileFormat>>>>>>>>>>>>>>>
-2023-09-14 18:33:57.331 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST FINISH >>>>>>>>>>>>>>>
-2023-09-14 18:35:44.985 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: test 1>>>>>>>>>>>>>>>
-2023-09-14 18:35:44.985 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: test 2>>>>>>>>>>>>>>>
-2023-09-14 18:35:47.254 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: goToLoginPage>>>>>>>>>>>>>>>
-2023-09-14 18:35:47.254 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: creatingNewEntry>>>>>>>>>>>>>>>
-2023-09-14 18:35:48.166 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:35:48.792 INFO [TestNG-tests-1] [pages.HomePage] - Open site with URL:https://monkkee.com/
-2023-09-14 18:35:49.322 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:35:49.400 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:35:49.463 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:35:49.684 INFO [TestNG-tests-1] [pages.HomePage] - Click on loginButton with xPath: By.xpath
-2023-09-14 18:35:50.101 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 18:35:50.787 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 18:35:50.897 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Человек всесилен, пока ничем не занят
-2023-09-14 18:35:50.959 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 18:35:51.010 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:35:51.188 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: creatingNewEntry>>>>>>>>>>>>>>>
-2023-09-14 18:35:52.026 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: deleteEntry>>>>>>>>>>>>>>>
-2023-09-14 18:35:52.650 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:35:52.797 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:35:52.871 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:35:52.930 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:35:53.481 INFO [TestNG-tests-2] [pages.EntriesPage] - Put all elements into a list
-2023-09-14 18:35:53.522 INFO [TestNG-tests-2] [pages.EntriesPage] - Select an item from a list
-2023-09-14 18:35:53.580 INFO [TestNG-tests-2] [pages.EntriesPage] - Press delete entries button with xPath: By.id: delete-entries
-2023-09-14 18:35:53.761 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: deleteEntry>>>>>>>>>>>>>>>
-2023-09-14 18:35:54.540 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: deletingAllEntries>>>>>>>>>>>>>>>
-2023-09-14 18:35:55.478 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:35:55.587 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:35:55.668 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:35:55.732 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:35:56.284 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 18:35:56.852 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 18:35:56.998 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Чтобы в жизнь пришло что-то новое, нужно освободить для него место
-2023-09-14 18:35:57.063 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 18:35:57.126 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:35:57.315 INFO [TestNG-tests-2] [pages.EntriesPage] - Click on all checkbox with xPath: By.xpath: //input[@ng-change='selectOrUnselectAll()']
-2023-09-14 18:35:57.368 INFO [TestNG-tests-2] [pages.EntriesPage] - Press delete entries button with xPath: By.id: delete-entries
-2023-09-14 18:35:57.463 INFO [TestNG-tests-2] [pages.EntriesPage] - Finding the 'No entries found paragraph'
-2023-09-14 18:35:57.464 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: deletingAllEntries>>>>>>>>>>>>>>>
-2023-09-14 18:35:58.254 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: editEntry>>>>>>>>>>>>>>>
-2023-09-14 18:35:58.940 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:35:59.091 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:35:59.172 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:35:59.233 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:35:59.280 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
-2023-09-14 18:35:59.757 INFO [TestNG-tests-1] [pages.BasePage] - 
-2023-09-14 18:35:59.807 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: goToLoginPage>>>>>>>>>>>>>>>
-2023-09-14 18:35:59.847 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 18:36:00.460 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 18:36:00.562 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: loginVerificationWithInvalidData>>>>>>>>>>>>>>>
-2023-09-14 18:36:00.637 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Чтобы в жизнь пришло что-то новое, нужно освободить для него место
-2023-09-14 18:36:00.685 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 18:36:00.732 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:36:00.910 INFO [TestNG-tests-2] [pages.EntriesPage] - Select created entry
-2023-09-14 18:36:01.048 INFO [TestNG-tests-2] [pages.EntriesPage] - Clear entry field
-2023-09-14 18:36:01.138 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field
-2023-09-14 18:36:01.186 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 18:36:01.208 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:36:01.240 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:36:01.348 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field adxeep@mailto.plus
-2023-09-14 18:36:01.402 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: editEntry>>>>>>>>>>>>>>>
-2023-09-14 18:36:01.454 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:36:01.513 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:36:01.514 INFO [TestNG-tests-1] [pages.LoginPage] - Login error message
-2023-09-14 18:36:02.107 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: loginVerificationWithInvalidData>>>>>>>>>>>>>>>
-2023-09-14 18:36:02.198 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: createTeg>>>>>>>>>>>>>>>
-2023-09-14 18:36:02.853 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: loginVerificationWithValidData>>>>>>>>>>>>>>>
-2023-09-14 18:36:02.973 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:36:03.126 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:36:03.207 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:36:03.266 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:36:03.296 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
-2023-09-14 18:36:03.457 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:36:03.603 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:36:03.700 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:36:03.767 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:36:03.878 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 18:36:04.359 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: loginVerificationWithValidData>>>>>>>>>>>>>>>
-2023-09-14 18:36:04.488 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 18:36:04.632 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Даже если вас съели – у вас два выхода
-2023-09-14 18:36:04.697 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 18:36:04.790 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:36:04.973 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-14 18:36:05.019 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-14 18:36:05.122 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: validatingLoginWithEmptyField>>>>>>>>>>>>>>>
-2023-09-14 18:36:05.143 INFO [TestNG-tests-2] [pages.TagsPage] - Writing text to tag field TEG
-2023-09-14 18:36:05.201 INFO [TestNG-tests-2] [pages.TagsPage] - Click on create new teg button 
-2023-09-14 18:36:05.257 INFO [TestNG-tests-2] [pages.TagsPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:36:05.384 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry By.xpath: //a[@class='tags__manage-link']
-2023-09-14 18:36:05.468 INFO [TestNG-tests-2] [pages.TagsPage] - Put all elements into a list
-2023-09-14 18:36:05.481 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: createTeg>>>>>>>>>>>>>>>
-2023-09-14 18:36:05.643 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:36:05.767 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field 
-2023-09-14 18:36:05.835 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field 
-2023-09-14 18:36:05.896 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:36:05.897 INFO [TestNG-tests-1] [pages.LoginPage] - Mandatory field
-2023-09-14 18:36:05.952 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: validatingLoginWithEmptyField>>>>>>>>>>>>>>>
-2023-09-14 18:36:06.330 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: deleteTag>>>>>>>>>>>>>>>
-2023-09-14 18:36:06.789 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: validatingLoginWithEmptyPasswordField>>>>>>>>>>>>>>>
-2023-09-14 18:36:07.026 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:36:07.194 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:36:07.274 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:36:07.347 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:36:07.380 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
-2023-09-14 18:36:07.588 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:36:07.983 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:36:08.049 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field 
-2023-09-14 18:36:08.085 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 18:36:08.139 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:36:08.139 INFO [TestNG-tests-1] [pages.LoginPage] - Mandatory field
-2023-09-14 18:36:08.184 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: validatingLoginWithEmptyPasswordField>>>>>>>>>>>>>>>
-2023-09-14 18:36:08.795 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 18:36:08.923 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Даже если вас съели – у вас два выхода
-2023-09-14 18:36:08.948 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: validatingLoginWithEmptyUserField>>>>>>>>>>>>>>>
-2023-09-14 18:36:08.982 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 18:36:09.039 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:36:09.273 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-14 18:36:09.324 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-14 18:36:09.447 INFO [TestNG-tests-2] [pages.TagsPage] - Writing text to tag field TEG
-2023-09-14 18:36:09.507 INFO [TestNG-tests-2] [pages.TagsPage] - Click on create new teg button 
-2023-09-14 18:36:09.563 INFO [TestNG-tests-2] [pages.TagsPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:36:09.626 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:36:09.754 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry By.xpath: //a[@class='tags__manage-link']
-2023-09-14 18:36:09.792 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field 
-2023-09-14 18:36:09.885 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:36:09.896 INFO [TestNG-tests-2] [pages.TagsPage] - Click the button delete teg By.xpath: //a[@ng-click='deleteTag(tag)']
-2023-09-14 18:36:09.949 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: deleteTag>>>>>>>>>>>>>>>
-2023-09-14 18:36:09.954 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:36:09.954 INFO [TestNG-tests-1] [pages.LoginPage] - Mandatory field
-2023-09-14 18:36:09.999 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: validatingLoginWithEmptyUserField>>>>>>>>>>>>>>>
-2023-09-14 18:36:10.827 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: loadingFileFormat>>>>>>>>>>>>>>>
-2023-09-14 18:36:10.861 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: editTag>>>>>>>>>>>>>>>
-2023-09-14 18:36:11.322 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:36:11.487 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:36:11.560 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
-2023-09-14 18:36:11.592 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:36:11.671 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:36:11.735 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
-2023-09-14 18:36:11.826 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
-2023-09-14 18:36:11.890 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
-2023-09-14 18:36:11.918 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
-2023-09-14 18:36:12.312 INFO [TestNG-tests-1] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 18:36:12.627 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTON
-2023-09-14 18:36:12.884 INFO [TestNG-tests-1] [pages.EntriesPage] - Entry field opened
-2023-09-14 18:36:12.947 INFO [TestNG-tests-1] [pages.UploadImagePage] - Select button block
-2023-09-14 18:36:13.211 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field opened
-2023-09-14 18:36:13.346 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Даже если вас съели – у вас два выхода
-2023-09-14 18:36:13.403 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save button
-2023-09-14 18:36:13.463 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:36:13.652 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-14 18:36:13.658 INFO [TestNG-tests-1] [pages.UploadImagePage] - Uploading a picture
-2023-09-14 18:36:13.710 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
-2023-09-14 18:36:13.768 INFO [TestNG-tests-1] [pages.UploadImagePage] - Click button ok
-2023-09-14 18:36:13.826 INFO [TestNG-tests-1] [pages.UploadImagePage] - ClickBy.xpath: //span[@class = 'cke_button_icon']
-2023-09-14 18:36:13.834 INFO [TestNG-tests-2] [pages.TagsPage] - Writing text to tag field TEG
-2023-09-14 18:36:13.869 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: loadingFileFormat>>>>>>>>>>>>>>>
-2023-09-14 18:36:13.910 INFO [TestNG-tests-2] [pages.TagsPage] - Click on create new teg button 
-2023-09-14 18:36:13.980 INFO [TestNG-tests-2] [pages.TagsPage] - Press home button with xPath: By.id: back-to-overview
-2023-09-14 18:36:14.053 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST FINISH >>>>>>>>>>>>>>>
-2023-09-14 18:36:14.094 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry By.xpath: //a[@class='tags__manage-link']
-2023-09-14 18:36:14.217 INFO [TestNG-tests-2] [pages.TagsPage] - Click the button edit teg
-2023-09-14 18:36:14.338 INFO [TestNG-tests-2] [pages.TagsPage] - Clear tag entry field
-2023-09-14 18:36:14.398 INFO [TestNG-tests-2] [pages.TagsPage] - Enter tag name
-2023-09-14 18:36:14.449 INFO [TestNG-tests-2] [pages.TagsPage] - Click the confirmation button, change the tag with the xpath.:
-2023-09-14 18:36:14.595 INFO [TestNG-tests-2] [pages.TagsPage] - Put all elements into a list
-2023-09-14 18:36:14.607 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: editTag>>>>>>>>>>>>>>>
-2023-09-14 18:36:14.781 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST FINISH >>>>>>>>>>>>>>>
+2023-09-15 15:32:55.880 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: test 2>>>>>>>>>>>>>>>
+2023-09-15 15:32:55.880 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: test 1>>>>>>>>>>>>>>>
+2023-09-15 15:32:57.984 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: creatingNewEntry>>>>>>>>>>>>>>>
+2023-09-15 15:32:57.984 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: goToLoginPage>>>>>>>>>>>>>>>
+2023-09-15 15:32:58.869 INFO [TestNG-tests-1] [pages.HomePage] - Open site with URL:https://monkkee.com/
+2023-09-15 15:32:58.888 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
+2023-09-15 15:32:59.034 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
+2023-09-15 15:32:59.114 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
+2023-09-15 15:32:59.174 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
+2023-09-15 15:32:59.468 INFO [TestNG-tests-1] [pages.HomePage] - Click on loginButtonBy.xpath: //a[@class = 'btn btn-primary']
+2023-09-15 15:33:00.239 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTONBy.id: create-entry
+2023-09-15 15:33:00.820 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field openedBy.xpath: //div[contains(@class,'contenteditable cke_editable')]
+2023-09-15 15:33:00.913 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Человек всесилен, пока ничем не занят
+2023-09-15 15:33:00.964 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save buttonBy.xpath: //span[@class='cke_button_icon']
+2023-09-15 15:33:01.021 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
+2023-09-15 15:33:01.185 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: creatingNewEntry>>>>>>>>>>>>>>>
+2023-09-15 15:33:01.926 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: deleteEntry>>>>>>>>>>>>>>>
+2023-09-15 15:33:02.745 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
+2023-09-15 15:33:02.889 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
+2023-09-15 15:33:02.964 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
+2023-09-15 15:33:03.030 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
+2023-09-15 15:33:03.553 INFO [TestNG-tests-2] [pages.EntriesPage] - Put all elements into a list
+2023-09-15 15:33:03.588 INFO [TestNG-tests-2] [pages.EntriesPage] - Select an item from a list
+2023-09-15 15:33:03.645 INFO [TestNG-tests-2] [pages.EntriesPage] - Press delete entries button By.id: delete-entries
+2023-09-15 15:33:03.825 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: deleteEntry>>>>>>>>>>>>>>>
+2023-09-15 15:33:04.549 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: deletingAllEntries>>>>>>>>>>>>>>>
+2023-09-15 15:33:05.356 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
+2023-09-15 15:33:05.491 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
+2023-09-15 15:33:05.552 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
+2023-09-15 15:33:05.602 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
+2023-09-15 15:33:06.227 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTONBy.id: create-entry
+2023-09-15 15:33:06.837 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field openedBy.xpath: //div[contains(@class,'contenteditable cke_editable')]
+2023-09-15 15:33:06.967 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Чтобы в жизнь пришло что-то новое, нужно освободить для него место
+2023-09-15 15:33:07.027 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save buttonBy.xpath: //span[@class='cke_button_icon']
+2023-09-15 15:33:07.088 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
+2023-09-15 15:33:07.260 INFO [TestNG-tests-2] [pages.EntriesPage] - Click on all checkbox with xPath: By.xpath: //input[@ng-change='selectOrUnselectAll()']
+2023-09-15 15:33:07.314 INFO [TestNG-tests-2] [pages.EntriesPage] - Press delete entries button By.id: delete-entries
+2023-09-15 15:33:07.469 INFO [TestNG-tests-2] [pages.EntriesPage] - Finding the 'No entries found paragraph'
+2023-09-15 15:33:07.471 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: deletingAllEntries>>>>>>>>>>>>>>>
+2023-09-15 15:33:08.089 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: editEntry>>>>>>>>>>>>>>>
+2023-09-15 15:33:09.161 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
+2023-09-15 15:33:09.310 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
+2023-09-15 15:33:09.390 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
+2023-09-15 15:33:09.451 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
+2023-09-15 15:33:09.482 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
+2023-09-15 15:33:09.507 INFO [TestNG-tests-1] [pages.BasePage] - 
+2023-09-15 15:33:09.557 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: goToLoginPage>>>>>>>>>>>>>>>
+2023-09-15 15:33:09.954 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTONBy.id: create-entry
+2023-09-15 15:33:10.200 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: loginVerificationWithInvalidData>>>>>>>>>>>>>>>
+2023-09-15 15:33:10.524 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field openedBy.xpath: //div[contains(@class,'contenteditable cke_editable')]
+2023-09-15 15:33:10.644 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Чтобы в жизнь пришло что-то новое, нужно освободить для него место
+2023-09-15 15:33:10.693 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save buttonBy.xpath: //span[@class='cke_button_icon']
+2023-09-15 15:33:10.737 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
+2023-09-15 15:33:10.910 INFO [TestNG-tests-2] [pages.EntriesPage] - Select created entry
+2023-09-15 15:33:11.018 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
+2023-09-15 15:33:11.087 INFO [TestNG-tests-2] [pages.EntriesPage] - Clear entry field
+2023-09-15 15:33:11.176 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input fieldНовый текст
+2023-09-15 15:33:11.205 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field adxeep@mailto.plus
+2023-09-15 15:33:11.231 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save buttonBy.xpath: //span[@class='cke_button_icon']
+2023-09-15 15:33:11.270 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
+2023-09-15 15:33:11.277 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
+2023-09-15 15:33:11.335 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
+2023-09-15 15:33:11.335 INFO [TestNG-tests-1] [pages.LoginPage] - Login error message
+2023-09-15 15:33:11.429 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: editEntry>>>>>>>>>>>>>>>
+2023-09-15 15:33:11.747 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: loginVerificationWithInvalidData>>>>>>>>>>>>>>>
+2023-09-15 15:33:12.077 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: createTeg>>>>>>>>>>>>>>>
+2023-09-15 15:33:12.387 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: loginVerificationWithValidData>>>>>>>>>>>>>>>
+2023-09-15 15:33:13.403 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
+2023-09-15 15:33:13.423 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
+2023-09-15 15:33:13.595 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
+2023-09-15 15:33:13.628 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
+2023-09-15 15:33:13.672 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
+2023-09-15 15:33:13.702 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
+2023-09-15 15:33:13.735 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
+2023-09-15 15:33:13.751 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
+2023-09-15 15:33:13.781 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
+2023-09-15 15:33:14.351 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: loginVerificationWithValidData>>>>>>>>>>>>>>>
+2023-09-15 15:33:14.400 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTONBy.id: create-entry
+2023-09-15 15:33:14.979 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: validatingLoginWithEmptyField>>>>>>>>>>>>>>>
+2023-09-15 15:33:15.054 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field openedBy.xpath: //div[contains(@class,'contenteditable cke_editable')]
+2023-09-15 15:33:15.163 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Даже если вас съели – у вас два выхода
+2023-09-15 15:33:15.228 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save buttonBy.xpath: //span[@class='cke_button_icon']
+2023-09-15 15:33:15.283 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
+2023-09-15 15:33:15.518 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
+2023-09-15 15:33:15.558 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
+2023-09-15 15:33:15.681 INFO [TestNG-tests-2] [pages.TagsPage] - Writing text to tag field TEG
+2023-09-15 15:33:15.740 INFO [TestNG-tests-2] [pages.TagsPage] - Click on create new teg button 
+2023-09-15 15:33:15.771 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
+2023-09-15 15:33:15.803 INFO [TestNG-tests-2] [pages.TagsPage] - Press home button with xPath: By.id: back-to-overview
+2023-09-15 15:33:15.894 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field 
+2023-09-15 15:33:15.965 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field 
+2023-09-15 15:33:15.988 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry By.xpath: //a[@class='tags__manage-link']
+2023-09-15 15:33:16.018 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
+2023-09-15 15:33:16.019 INFO [TestNG-tests-1] [pages.LoginPage] - Mandatory field
+2023-09-15 15:33:16.057 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: validatingLoginWithEmptyField>>>>>>>>>>>>>>>
+2023-09-15 15:33:16.076 INFO [TestNG-tests-2] [pages.TagsPage] - Put all elements into a list
+2023-09-15 15:33:16.088 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: createTeg>>>>>>>>>>>>>>>
+2023-09-15 15:33:16.709 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: validatingLoginWithEmptyPasswordField>>>>>>>>>>>>>>>
+2023-09-15 15:33:16.741 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: deleteTag>>>>>>>>>>>>>>>
+2023-09-15 15:33:17.681 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
+2023-09-15 15:33:17.725 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
+2023-09-15 15:33:17.815 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
+2023-09-15 15:33:17.880 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
+2023-09-15 15:33:17.884 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field 
+2023-09-15 15:33:17.936 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
+2023-09-15 15:33:17.936 INFO [TestNG-tests-1] [pages.LoginPage] - Mandatory field
+2023-09-15 15:33:17.948 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
+2023-09-15 15:33:17.974 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: validatingLoginWithEmptyPasswordField>>>>>>>>>>>>>>>
+2023-09-15 15:33:18.004 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
+2023-09-15 15:33:18.033 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
+2023-09-15 15:33:18.612 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTONBy.id: create-entry
+2023-09-15 15:33:18.677 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: validatingLoginWithEmptyUserField>>>>>>>>>>>>>>>
+2023-09-15 15:33:19.184 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field openedBy.xpath: //div[contains(@class,'contenteditable cke_editable')]
+2023-09-15 15:33:19.299 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field Счастлив не тот, у кого много, а тот, кому хватает
+2023-09-15 15:33:19.345 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save buttonBy.xpath: //span[@class='cke_button_icon']
+2023-09-15 15:33:19.388 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
+2023-09-15 15:33:19.510 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
+2023-09-15 15:33:19.581 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
+2023-09-15 15:33:19.624 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
+2023-09-15 15:33:19.686 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field 
+2023-09-15 15:33:19.745 INFO [TestNG-tests-2] [pages.TagsPage] - Writing text to tag field TEG
+2023-09-15 15:33:19.758 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
+2023-09-15 15:33:19.801 INFO [TestNG-tests-2] [pages.TagsPage] - Click on create new teg button 
+2023-09-15 15:33:19.821 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
+2023-09-15 15:33:19.821 INFO [TestNG-tests-1] [pages.LoginPage] - Mandatory field
+2023-09-15 15:33:19.858 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: validatingLoginWithEmptyUserField>>>>>>>>>>>>>>>
+2023-09-15 15:33:19.867 INFO [TestNG-tests-2] [pages.TagsPage] - Press home button with xPath: By.id: back-to-overview
+2023-09-15 15:33:19.992 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry By.xpath: //a[@class='tags__manage-link']
+2023-09-15 15:33:20.130 INFO [TestNG-tests-2] [pages.TagsPage] - Click the button delete teg By.xpath: //a[@ng-click='deleteTag(tag)']
+2023-09-15 15:33:20.172 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: deleteTag>>>>>>>>>>>>>>>
+2023-09-15 15:33:20.514 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: loadingFileFormat>>>>>>>>>>>>>>>
+2023-09-15 15:33:20.811 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST START: editTag>>>>>>>>>>>>>>>
+2023-09-15 15:33:21.978 INFO [TestNG-tests-2] [pages.LoginPage] - Open page with URL: https://monkkee.com/
+2023-09-15 15:33:22.106 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
+2023-09-15 15:33:22.168 INFO [TestNG-tests-2] [pages.LoginPage] - Enter in the Password field Nata1111
+2023-09-15 15:33:22.201 INFO [TestNG-tests-1] [pages.LoginPage] - Open page with URL: https://monkkee.com/
+2023-09-15 15:33:22.219 INFO [TestNG-tests-2] [pages.LoginPage] - Click on loginButton with xPath:
+2023-09-15 15:33:22.249 INFO [TestNG-tests-2] [pages.EntriesPage] - Open page with URL:https://monkkee.com/
+2023-09-15 15:33:22.408 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the User field aadxeep@mailto.plus
+2023-09-15 15:33:22.480 INFO [TestNG-tests-1] [pages.LoginPage] - Enter in the Password field Nata1111
+2023-09-15 15:33:22.530 INFO [TestNG-tests-1] [pages.LoginPage] - Click on loginButton with xPath:
+2023-09-15 15:33:22.817 INFO [TestNG-tests-2] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTONBy.id: create-entry
+2023-09-15 15:33:23.196 INFO [TestNG-tests-1] [pages.EntriesPage] - Push button CREATE_AN_ENTRY_BUTTONBy.id: create-entry
+2023-09-15 15:33:23.410 INFO [TestNG-tests-2] [pages.EntriesPage] - Entry field openedBy.xpath: //div[contains(@class,'contenteditable cke_editable')]
+2023-09-15 15:33:23.533 INFO [TestNG-tests-2] [pages.EntriesPage] - Enter text in the input field В жизни нужно стремиться обгонять не других, а самого себя.
+2023-09-15 15:33:23.586 INFO [TestNG-tests-2] [pages.EntriesPage] - Press save buttonBy.xpath: //span[@class='cke_button_icon']
+2023-09-15 15:33:23.645 INFO [TestNG-tests-2] [pages.EntriesPage] - Press home button with xPath: By.id: back-to-overview
+2023-09-15 15:33:23.770 INFO [TestNG-tests-1] [pages.EntriesPage] - Entry field openedBy.xpath: //div[contains(@class,'contenteditable cke_editable')]
+2023-09-15 15:33:23.819 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
+2023-09-15 15:33:23.824 INFO [TestNG-tests-1] [pages.UploadImagePage] - Select button block
+2023-09-15 15:33:23.860 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry
+2023-09-15 15:33:23.980 INFO [TestNG-tests-2] [pages.TagsPage] - Writing text to tag field TEG
+2023-09-15 15:33:24.038 INFO [TestNG-tests-2] [pages.TagsPage] - Click on create new teg button 
+2023-09-15 15:33:24.093 INFO [TestNG-tests-2] [pages.TagsPage] - Press home button with xPath: By.id: back-to-overview
+2023-09-15 15:33:24.277 INFO [TestNG-tests-2] [pages.TagsPage] - Select entry By.xpath: //a[@class='tags__manage-link']
+2023-09-15 15:33:24.390 INFO [TestNG-tests-2] [pages.TagsPage] - Click the button edit tegBy.xpath: //i[@class='icon-plus icon-white']
+2023-09-15 15:33:24.528 INFO [TestNG-tests-1] [pages.UploadImagePage] - Uploading a picture
+2023-09-15 15:33:24.560 INFO [TestNG-tests-2] [pages.TagsPage] - Clear tag entry field
+2023-09-15 15:33:24.614 INFO [TestNG-tests-1] [pages.UploadImagePage] - Click button ok
+2023-09-15 15:33:24.619 INFO [TestNG-tests-2] [pages.TagsPage] - Enter tag nameNEW_TEG
+2023-09-15 15:33:24.671 INFO [TestNG-tests-2] [pages.TagsPage] - Click the confirmation button, change the tag
+2023-09-15 15:33:24.676 INFO [TestNG-tests-1] [pages.UploadImagePage] - ClickBy.xpath: //span[@class = 'cke_button_icon']
+2023-09-15 15:33:24.721 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: loadingFileFormat>>>>>>>>>>>>>>>
+2023-09-15 15:33:24.808 INFO [TestNG-tests-1] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST FINISH >>>>>>>>>>>>>>>
+2023-09-15 15:33:24.871 INFO [TestNG-tests-2] [pages.TagsPage] - Put all elements into a list
+2023-09-15 15:33:24.882 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST SUCCESS: editTag>>>>>>>>>>>>>>>
+2023-09-15 15:33:24.977 INFO [TestNG-tests-2] [tests.base.TestListener] - >>>>>>>>>>>>>>>TEST FINISH >>>>>>>>>>>>>>>

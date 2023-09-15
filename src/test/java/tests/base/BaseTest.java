@@ -9,12 +9,16 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import pages.*;
+import utils.PropertyReader;
 
 import java.util.concurrent.TimeUnit;
 
 @Listeners(TestListener.class)
 
 public abstract class BaseTest {
+    protected String user;
+    protected String password;
+
     protected WebDriver driver;
     protected HomePage homePage;
     protected LoginPage loginPage;
@@ -27,11 +31,18 @@ public abstract class BaseTest {
     @Step("Настройка и открытие браузера")
     @BeforeMethod
     public void setUp() {
+
+
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
+        options.addArguments("--headless");
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+        user = System.getenv().getOrDefault("ONLINEDIARY_USER", PropertyReader.getProperty("onlineDiary.user"));
+        password = System.getenv().getOrDefault("ONLINEDIARY_PASSWORD", PropertyReader.getProperty("onlineDiary.password"));
+
 
         homePage = new HomePage(driver);
         loginPage = new LoginPage(driver);
