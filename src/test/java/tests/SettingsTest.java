@@ -11,9 +11,8 @@ public class SettingsTest extends BaseTest {
     @Test(description = "Проверка выбора языка")
     public void selectLanguage() {
         loginPage.open()
-                .login("aadxeep@mailto.plus", "Nata1111")
-                .clickLoginButton()
-                .open();
+                .login(user, password)
+                .clickLoginButton();
         settingsPage.clickSettingButton()
                 .selectSettingLanguage()
                 .selectLanguage()

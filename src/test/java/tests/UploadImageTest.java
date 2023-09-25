@@ -9,7 +9,7 @@ public class UploadImageTest extends BaseTest {
     @Test(description = "Проверка загрузки файла при создании записи")
     public void loadingFileFormat() throws InterruptedException {
         loginPage.open()
-                .login("aadxeep@mailto.plus", "Nata1111")
+                .login(user, password)
                 .clickLoginButton()
                 .clickCreateAnEntryButton();
         uploadImagePage.buttonBlockImage()

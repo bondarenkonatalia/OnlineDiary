@@ -25,12 +25,6 @@ public class EntriesPage extends BasePage {
     public EntriesPage(WebDriver driver) {
         super(driver);
     }
-    @Step("Открыть страницу")
-    public EntriesPage open() {
-        driver.get(URL + "app/#/entries");
-        log.info("Open page with URL:" + URL);
-        return this;
-    }
 
     @Step("Нажать кнопку CREATE_AN_ENTRY_BUTTON")
     public EntriesPage clickCreateAnEntryButton() {
@@ -57,7 +51,7 @@ public class EntriesPage extends BasePage {
     @Step("Нажать кнопку HOME_BUTTON")
     public EntriesPage clickHomeButton() {
         driver.findElement(HOME_BUTTON).click();
-        log.info("Press home button with xPath: "+ HOME_BUTTON);
+        log.info("Press home button "+ HOME_BUTTON);
         return this;
     }
     @Step("Выбрать запись из списка")
@@ -71,7 +65,7 @@ public class EntriesPage extends BasePage {
     @Step("Выбрать все записи")
     public EntriesPage selectAllEntries() {
         driver.findElement(ALL_CHECKBOX).click();
-        log.info("Click on all checkbox with xPath: "+ ALL_CHECKBOX);
+        log.info("Click on all checkbox "+ ALL_CHECKBOX);
         return this;
     }
     @Step("Редактирование созданной записи")
@@ -81,7 +75,7 @@ public class EntriesPage extends BasePage {
         driver.findElement(RECORD_INPUT_FIELD).clear();
         log.info("Clear entry field");
         driver.findElement(RECORD_INPUT_FIELD).sendKeys(text);
-        log.info("Enter text in the input field" + text);
+        log.info("Enter text in the input field " + text);
         driver.findElement(SAVE_BUTTON).click();
         log.info("Press save button"+ SAVE_BUTTON);
         return this;
@@ -93,12 +87,6 @@ public class EntriesPage extends BasePage {
         Alert alert = driver.switchTo().alert();
         alert.accept();
         return this;
-    }
-    @Step("Найти абзац «Записи не найдены")
-    public boolean isThereNoEntries() {
-        driver.findElement(NO_RECORDS);
-        log.info("Finding the 'No entries found paragraph'");
-        return true;
     }
 
     @Step("Убедиться, что на странице нет записей")

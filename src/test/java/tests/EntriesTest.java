@@ -4,15 +4,13 @@ import org.testng.annotations.Test;
 import tests.base.BaseTest;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
 
 public class EntriesTest extends BaseTest {
 
     @Test(description = "Проверка создания новой записи")
     public void creatingNewEntry() {
         loginPage.open()
-                .login("aadxeep@mailto.plus", "Nata1111")
+                .login(user, password)
                 .clickLoginButton()
                 .clickCreateAnEntryButton()
                 .createNewEntryWithText("Человек всесилен, пока ничем не занят")
@@ -20,25 +18,31 @@ public class EntriesTest extends BaseTest {
 
         assertEquals(entriesPage.getTextEntry(), "Человек всесилен, пока ничем не занят", "Запись не создана");
 
-    }
-    @Test(description = "Проверка удаления записи")
-    public void deleteEntry() {
-        loginPage.open()
-                .login("aadxeep@mailto.plus", "Nata1111")
-                .clickLoginButton()
-                .selectEntry()
+        entriesPage.selectEntry()
                 .clickDeleteEntriesButton();
 
 
-        assertEquals(entriesPage.noEntriesOnPage(), "No entries found", "Entry is not deleted");
+    }
+
+    @Test(description = "Проверка удаления записи")
+    public void deleteEntry() {
+        loginPage.open()
+                .login(user, password)
+                .clickLoginButton()
+                .clickCreateAnEntryButton()
+                .createNewEntryWithText("Человек всесилен, пока ничем не занят")
+                .clickHomeButton()
+                .selectEntry()
+                .clickDeleteEntriesButton();
+
+        assertEquals(entriesPage.noEntriesOnPage(), "No entries found", "Запись не удалена");
     }
 
     @Test(description = "Проверка редактирования записи")
     public void editEntry() {
         loginPage.open()
-                .login("aadxeep@mailto.plus", "Nata1111")
+                .login(user, password)
                 .clickLoginButton()
-                .open()
                 .clickCreateAnEntryButton()
                 .createNewEntryWithText("Чтобы в жизнь пришло что-то новое, нужно освободить для него место")
                 .clickHomeButton()
@@ -47,12 +51,15 @@ public class EntriesTest extends BaseTest {
 
         assertEquals(entriesPage.getTextEntry(), "Новый текст", "Запись не изменилась");
 
+        entriesPage.selectEntry()
+                .clickDeleteEntriesButton();
+
     }
 
     @Test(description = "Проверка удаления всех записей")
     public void deletingAllEntries() {
         loginPage.open()
-                .login("aadxeep@mailto.plus", "Nata1111")
+                .login(user, password)
                 .clickLoginButton()
                 .clickCreateAnEntryButton()
                 .createNewEntryWithText("Чтобы в жизнь пришло что-то новое, нужно освободить для него место")
@@ -60,8 +67,7 @@ public class EntriesTest extends BaseTest {
                 .selectAllEntries()
                 .clickDeleteEntriesButton();
 
-
-        assertTrue(entriesPage.isThereNoEntries());
+        assertEquals(entriesPage.noEntriesOnPage(), "No entries found", "Запись не удалёна");
 
     }
 }

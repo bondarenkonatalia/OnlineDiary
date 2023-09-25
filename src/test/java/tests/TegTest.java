@@ -10,61 +10,78 @@ public class TegTest extends BaseTest {
     @Test(description = "Проверка создания тега")
     public void createTeg() {
         loginPage.open()
-                .login("aadxeep@mailto.plus", "Nata1111")
+                .login(user, password)
                 .clickLoginButton()
-                .open()
                 .clickCreateAnEntryButton()
                 .createNewEntryWithText("Даже если вас съели – у вас два выхода")
-                .clickHomeButton();
-        tagsPage.clickEntries()
-                .writeTextToTag("TEG")
+                .clickHomeButton()
+                .selectEntry();
+        tagsPage.writeTextToTag("TEG")
                 .clickOk()
                 .clickHomeButton();
 
         assertEquals(tagsPage.getTextListTeg(), "TEG", "Тег не создан");
+
+
+        tagsPage.clickHomeButton()
+                .clickButtonManagerTags()
+                .buttonDeleteTags()
+                .clickHomeButton();
+        entriesPage.selectEntry()
+                .clickDeleteEntriesButton();
 
     }
 
     @Test(description = "Проверка удаления тега")
     public void deleteTag() {
         loginPage.open()
-                .login("aadxeep@mailto.plus", "Nata1111")
+                .login(user, password)
                 .clickLoginButton()
-                .open()
                 .clickCreateAnEntryButton()
                 .createNewEntryWithText("Счастлив не тот, у кого много, а тот, кому хватает")
-                .clickHomeButton();
-        tagsPage.clickEntries()
-                .writeTextToTag("TEG")
+                .clickHomeButton()
+                .selectEntry();
+        tagsPage.writeTextToTag("TEG")
                 .clickOk()
+                .clickHomeButton()
+                .clickButtonManagerTags()
+                .buttonDeleteTags()
                 .clickHomeButton();
-        tagsPage.clickButtonManagerTags()
-                .buttonDeleteTags();
 
         assertEquals(tagsPage.noTegOnPage(), "No tags", "Тег не удалён");
 
+        entriesPage.selectEntry()
+                .clickDeleteEntriesButton();
 
     }
 
     @Test(description = "Проверка редактирования  тега")
     public void editTag() {
         loginPage.open()
-                .login("aadxeep@mailto.plus", "Nata1111")
+                .login(user, password)
                 .clickLoginButton()
-                .open()
                 .clickCreateAnEntryButton()
                 .createNewEntryWithText("В жизни нужно стремиться обгонять не других, а самого себя.")
-                .clickHomeButton();
-        tagsPage.clickEntries()
-                .writeTextToTag("TEG")
+                .clickHomeButton()
+                .selectEntry();
+        tagsPage.writeTextToTag("TEG")
                 .clickOk()
                 .clickHomeButton()
                 .clickButtonManagerTags()
                 .buttonEditTags()
                 .createTagName("NEW_TEG")
-                .clickOnOkButton();
+                .clickOnOkButton()
+                .clickHomeButton();
 
         assertEquals(tagsPage.getTextTeg(), "NEW_TEG", "Тег не изменён");
+
+        tagsPage.clickHomeButton()
+                .clickButtonManagerTags()
+                .buttonDeleteTags()
+                .clickHomeButton();
+        entriesPage.selectEntry()
+                .clickDeleteEntriesButton();
+
     }
 
 }

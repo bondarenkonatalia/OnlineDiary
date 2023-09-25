@@ -35,7 +35,7 @@ public abstract class BaseTest {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
-        options.addArguments("--headless");
+        //options.addArguments("--headless");
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -55,8 +55,6 @@ public abstract class BaseTest {
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
         driver.quit();
-        
-= aadxeep@mailto.plus
-= Nata1111
+
     }
 }

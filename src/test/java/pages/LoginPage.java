@@ -37,7 +37,7 @@ public class LoginPage extends BasePage {
     @Step("Нажать кнопку LOGIN")
     public EntriesPage clickLoginButton() {
         driver.findElement(LOGIN_BUTTON).click();
-        log.info("Click on loginButton with xPath:");
+        log.info("Click on loginButton with xPath:" + LOGIN_BUTTON);
         return new EntriesPage(driver);
     }
     @Step("Получить сообщение об ошибке входа")

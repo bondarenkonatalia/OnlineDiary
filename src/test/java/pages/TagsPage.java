@@ -16,12 +16,12 @@ public class TagsPage extends BasePage {
     public static final By TITLE_MANAGER_TAGS = By.xpath("//div[@class='content-container clearfix ng-scope']//h1");
     public static final By EDIT_TAGS = By.xpath("//i[@class='icon-plus icon-white']");
     public static final By INPUT_TAG_NAME = By.xpath("//input[@ng-change='resetFormStatus()']");
-    public static final By BUTTON_OK = By.xpath("//button[@class='btn btn-default']");
-    public static final By ENTRIES = By.xpath("(//div[@class=' body'])[1]");
+    public static final By BUTTON_OK = By.id("assign-new-tag");
+    public static final By ENTRIES = By.xpath("//div[@class='entry-container clearfix ng-scope']");
     public static final By NEW_TAG_INPUT = By.xpath("//input[@ng-model='model.newTag']");
-    public static final By CREATE_NEW_TAG_BUTTON = By.id("assign-new-tag");
     public static final By DELETE_TAG_BUTTON = By.xpath("//a[@ng-click='deleteTag(tag)']");
-    public static final By HOME_BUTTON = By.id("back-to-overview");
+    public static final By HOME_BUTTON = By.xpath("//a[@class='btn btn-default']");
+    public static final By CREATE_NEW_TAG_BUTTON = By.xpath("//button[@class='btn btn-default']");
     public static final By NO_TAGS = By.xpath("//div[@class='none centered']");
     public static final By LIST_OF_TAGS = By.xpath("//td[@class='tag ng-binding']");
 
@@ -32,7 +32,7 @@ public class TagsPage extends BasePage {
     @Step("Нажать на кнопку для редактирования тегов")
     public TagsPage buttonEditTags() {
         driver.findElement(EDIT_TAGS).click();
-        log.info("Click the button edit teg"+ EDIT_TAGS);
+        log.info("Click the button edit teg "+ EDIT_TAGS);
         return this;
     }
 
@@ -41,22 +41,17 @@ public class TagsPage extends BasePage {
         driver.findElement(INPUT_TAG_NAME).clear();
         log.info("Clear tag entry field");
         driver.findElement(INPUT_TAG_NAME).sendKeys(text);
-        log.info("Enter tag name"+ text);
+        log.info("Enter tag name "+ text);
         return this;
     }
 
     @Step("Нажать кнопку OK")
     public TagsPage clickOnOkButton() {
-        driver.findElement(BUTTON_OK).click();
+        driver.findElement(CREATE_NEW_TAG_BUTTON).click();
         log.info("Click the confirmation button, change the tag");
         return this;
     }
-    @Step("Выбрать запись")
-    public TagsPage clickEntries() {
-        driver.findElement(ENTRIES).click();
-        log.info("Select entry");
-        return this;
-    }
+
     @Step("Записать имя тега")
     public TagsPage writeTextToTag(String text) {
         driver.findElement(ENTRIES).click();
@@ -67,7 +62,7 @@ public class TagsPage extends BasePage {
     }
     @Step("Подтвердить создание тега")
     public TagsPage clickOk() {
-        driver.findElement(CREATE_NEW_TAG_BUTTON).click();
+        driver.findElement(BUTTON_OK).click();
         log.info("Click on create new teg button ");
         return this;
     }

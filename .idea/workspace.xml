@@ -4,7 +4,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="159a4e6e-9455-4f41-ae2a-50b1a97d3c71" name="Changes" comment="1" />
+    <list default="true" id="159a4e6e-9455-4f41-ae2a-50b1a97d3c71" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/EntriesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/EntriesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TagsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TagsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/EntriesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/EntriesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SettingsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SettingsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TegTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TegTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/UploadImageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/UploadImageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/06b9fd3b-00fd-4c3a-a3fe-8761f1c8881f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/09e4afd3-15a2-4518-8613-572eeca5beec-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0bc1b621-5efe-4ab6-acf5-762ceb0cf6f7-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0e904e0c-5840-460b-af8d-9e5789415e94-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/10073eab-feb2-48fb-b5ab-973c9b04faae-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/13973af2-8ab2-4697-9743-a1de40781ca4-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1d4819ed-db8f-46d7-b385-e9e707c8ec16-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1ebb3bf2-e0b8-4e31-96a8-b930c1ff3c2a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/21bd4eca-7c6d-4636-bc9a-a7391d7c583c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3923ba62-741d-4e7b-bc14-132e8ee6343c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/39a0c683-de18-4ebb-b3e1-aa8b6709218e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/4033e39d-7dbd-46b8-9da5-2c31bb2de9c5-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/4287bcc1-5162-424c-8908-6f4c4cfb85eb-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/4420783c-0f20-44b7-b6b9-381c8ccaa259-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/4503a4de-d0b8-444c-8ab1-ee39497b4e1a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/5194f741-8b0d-4263-a3a9-9b7c72093b09-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/52cb336b-436c-4bfc-be86-a6b0fe76cf51-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/542b694c-d6f9-4589-a481-88ea7ac5e378-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/58604857-728d-4d4b-8467-c864f7b87021-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/66c19677-4572-4556-af25-7e1fdf68250c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/67aa1496-3d8a-4678-ae38-33432c76ff89-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/6875e21e-b564-41fc-be32-3359707a1975-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/732378d5-55f5-4b8a-9cd3-32ace8a7444e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/7504245a-09d2-49e0-8bb1-91277fce702e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/7b1357c3-2832-4526-b844-5c5ece07e9b5-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/84803374-0aa7-48d7-9748-6bbfb27634ba-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/89f5da9c-b7d4-400a-a152-c0930ad9f2f3-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/8f468027-c5a5-4b61-b396-21bd91b28f2f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/90379c40-fbcf-427a-9c85-f363cc95c3e6-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9bf01644-1287-413c-b962-a51884cb21db-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/a5f0e4f6-8dae-4380-927b-87cb5d876ea0-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/adef7537-2771-459a-a0c4-c2ab73782e5e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/aee44093-a37a-4823-ad5c-68d3c8661a27-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/af83181f-dca5-4fd0-8829-482e31b1e514-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/allure.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/b420104d-6cb8-4c78-b10b-666a86b26b4c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/b806fe0c-0a82-4571-852a-3837c841c6fb-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/b92f175b-6620-4e16-af8e-e0d9d2982ad0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/bba3671c-34ed-4e0c-9ea8-ef236e139bba-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/bbd4435e-23a2-44d9-81b6-22951ee8834f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/bd2ac6cf-bc63-4590-a5ad-e061c2e70ace-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/bd5ac348-c9d7-46e5-a97f-d91c32ac7797-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/bfdcbc94-92ca-45ba-85c4-35ee0460a4eb-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/c45a5b1e-88fc-4977-88c9-0d36f749380b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ca034877-aed4-4926-902a-ebaf7493601b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/d2379bbe-c5f0-493d-bea6-06cc560eed40-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/de1fd332-8680-4413-b48b-d8bcfab6f904-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e36ac9f1-7566-4a8b-95a4-978a5abea461-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e8f28e00-4678-4e4f-82db-4006354fd7b9-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e92384ed-bf19-41d5-961b-b10be2555527-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/fad4a1e1-ec64-40ee-8610-c916fb5a3d28-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/TagsTest.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,18 +116,8 @@
       <recent name="E:\OnlineDiary\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.E:/OnlineDiary/src/test/resources/regression.xml">
-    <configuration name="E:/OnlineDiary/src/test/resources/regression.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OnlineDiary" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/regression.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EntriesTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TegTest">
+    <configuration name="EntriesTest.creatingNewEntry" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OnlineDiary" />
       <extension name="coverage">
         <pattern>
@@ -74,41 +127,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.EntriesTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OnlineDiary" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.loginVerificationWithInvalidData" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OnlineDiary" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="loginVerificationWithInvalidData" />
+      <option name="METHOD_NAME" value="creatingNewEntry" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -116,7 +135,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.loginVerificationWithValidData" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TegTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OnlineDiary" />
       <extension name="coverage">
         <pattern>
@@ -125,8 +144,61 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="loginVerificationWithValidData" />
+      <option name="MAIN_CLASS_NAME" value="tests.TegTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TegTest.createTeg" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OnlineDiary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TegTest" />
+      <option name="METHOD_NAME" value="createTeg" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TegTest.deleteTag" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OnlineDiary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TegTest" />
+      <option name="METHOD_NAME" value="deleteTag" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TegTest.editTag" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OnlineDiary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TegTest" />
+      <option name="METHOD_NAME" value="editTag" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -136,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.E:/OnlineDiary/src/test/resources/regression.xml" />
-        <item itemvalue="TestNG.LoginTest.loginVerificationWithInvalidData" />
-        <item itemvalue="TestNG.LoginTest.loginVerificationWithValidData" />
-        <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.EntriesTest" />
+        <item itemvalue="TestNG.TegTest" />
+        <item itemvalue="TestNG.TegTest.createTeg" />
+        <item itemvalue="TestNG.TegTest.deleteTag" />
+        <item itemvalue="TestNG.EntriesTest.creatingNewEntry" />
+        <item itemvalue="TestNG.TegTest.editTag" />
       </list>
     </recent_temporary>
   </component>
@@ -272,7 +344,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -314,9 +386,9 @@
     <MESSAGE value="2" />
     <MESSAGE value="end" />
     <MESSAGE value="доработала TegTest" />
-    <MESSAGE value="доработала" />
     <MESSAGE value="Delete .allure/allure-2.8.1 directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete .allure/allure-2.8.1 directory" />
+    <MESSAGE value="доработала" />
+    <option name="LAST_COMMIT_MESSAGE" value="доработала" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
